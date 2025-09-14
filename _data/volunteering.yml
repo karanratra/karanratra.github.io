@@ -29,6 +29,10 @@
   year: "2025"
   logo: "/assets/img/orgs/nasa.png"
   description: "Mentored and judged global teams working on real-world space, climate, and AI challenges using NASA datasets."
+  details: |
+    <p>In 2025, I was honored to serve as a <strong>Mentor and Judge at the NASA International Space Apps Challenge</strong>, the world’s largest global hackathon, engaging innovators, engineers, scientists, and students from over 180 countries and territories. This prestigious event, backed by NASA and its global partners, challenges participants to apply creativity and technical expertise to solve some of the world’s most pressing problems on Earth and in space.</p>
+
+    <p>As a judge, I evaluated projects based on innovation, technical depth, scalability, and potential real-world impact, while as a mentor I provided guidance to teams on system design, problem-solving strategies, and execution within the hackathon’s fast-paced environment. My involvement supported participants in transforming ambitious ideas into tangible solutions, reinforcing my commitment to advancing global collaboration, scientific innovation, and the next generation of technology leaders.</p>
 
 - title: "Mentor – TreeHack 2025"
   organization: "Standford University"
@@ -97,8 +101,17 @@
     - /assets/img/orgs/volunteering/HackDavis-8.png
     - /assets/img/orgs/volunteering/HackDavis-9.png
 
+- title: Judge – Vanilla Web Hackathon 2025
+  organization: Raptors Dev
+  year: 2025
+  logo: "/assets/img/orgs/logo_raptor.svg"
+  description: "In 2025, I served as a Judge at the Vanilla Web Hackathon, a global event dedicated to advancing open web technologies and empowering developers to build impactful solutions using core web standards."
+  details: |
+    <p>In 2025, I served as a <strong>Judge at the Vanilla Web Hackathon</strong>, a global event dedicated to advancing open web technologies and empowering developers to build impactful solutions using core web standards. The hackathon brought together talented engineers, students, and innovators from diverse backgrounds to showcase creativity and technical excellence in web development.</p>
 
-  
+    <p>As a judge, I evaluated projects based on innovation, technical depth, usability, and their ability to leverage modern web technologies effectively. By providing constructive feedback and recognizing the most outstanding submissions, I contributed to fostering a culture of collaboration and open innovation in the web community, encouraging participants to push the boundaries of what is possible on the web.</p>    
+  download_link: /assets/pdf/orgs/volunteering/Vanilla_Web_Hackathon_Certificate.pdf
+
 - title: "Judge – HackMIT 2024"
   organization: "Massachusetts Institute of Technology"
   year: "2024"
