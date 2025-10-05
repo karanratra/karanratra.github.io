@@ -131,11 +131,25 @@
     <p>As a judge, I evaluated projects based on innovation, technical depth, usability, and their ability to leverage modern web technologies effectively. By providing constructive feedback and recognizing the most outstanding submissions, I contributed to fostering a culture of collaboration and open innovation in the web community, encouraging participants to push the boundaries of what is possible on the web.</p>    
   download_link: /assets/pdf/orgs/volunteering/Vanilla_Web_Hackathon_Certificate.pdf
 
-- title: "Judge – HackMIT 2024"
+- title: "Mentor & Judge – HackMIT 2024"
   organization: "Massachusetts Institute of Technology"
   year: "2024"
   logo: "/assets/img/orgs/mit.png"
   description: "Reviewed projects from 1,500+ participants. Scored submissions on innovation, execution, and social impact."
+  details: |
+    <p>Served as a <strong>Mentor and Judge at HackMIT 2024</strong>, one of the world’s most prestigious collegiate hackathons hosted by the Massachusetts Institute of Technology. The event brought together over 1,500 participants from 20+ countries and 200+ universities, showcasing groundbreaking ideas and innovations across diverse domains.</p>
+    <p>As a mentor, I guided teams through project ideation, technical architecture, and implementation strategies, helping them convert their concepts into viable prototypes within the 36-hour event. As a judge, I evaluated submissions based on innovation, scalability, technical depth, and potential real-world impact, recognizing projects that demonstrated exceptional creativity and engineering excellence.</p>
+    <p>This experience reinforced my passion for supporting young innovators and fostering a global culture of collaboration, problem-solving, and technology-driven change.</p>
+  download_link: /assets/pdf/orgs/volunteering/hackmit.pdf
+  gallery:
+    - /assets/img/orgs/volunteering/HackMIT_2024_ID_Card_Front.jpeg
+    - /assets/img/orgs/volunteering/HackMIT_2024_ID_Card_Back.jpeg
+    - /assets/img/orgs/volunteering/HackMit-1.jpeg  
+    - /assets/img/orgs/volunteering/HackMit-2.jpeg
+    - /assets/img/orgs/volunteering/HackMit-3.jpeg
+    - /assets/img/orgs/volunteering/HackMit-4.jpeg
+    - /assets/img/orgs/volunteering/HackMit-5.jpeg
+
 
 - title: "Judge – HackHarvard 2024"
   organization: "Harvard University"
