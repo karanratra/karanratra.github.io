@@ -52,7 +52,35 @@
     - /assets/img/orgs/volunteering/business-intelligence-1.png
     - /assets/img/orgs/volunteering/business-intelligence-2.png
     - /assets/img/orgs/volunteering/business-intelligence-3.png
-  
+
+- title: "Peer Reviewer – Elsevier"
+  organization: "Engineering Applications of Artificial Intelligence (EAAI)"
+  year: "2025"
+  logo: "/assets/img/orgs/eaai.jpg"
+  description: |
+    <p>Peer Reviewer for Elsevier’s EAAI, assessing AI research for rigor, reproducibility, and real-world impact. Verified on ORCID.</p>
+  details: |
+
+    <p>As a <strong>Peer Reviewer for <a href="https://www.journals.elsevier.com/engineering-applications-of-artificial-intelligence" target="_blank" rel="noopener">Engineering Applications of Artificial Intelligence (EAAI)</a></strong>, I evaluate research papers focused on applying artificial intelligence to solve real-world engineering challenges. My reviews emphasize <em>methodological soundness, experimental rigor, reproducibility, and industry relevance</em>—ensuring that accepted publications advance both academic and applied AI innovation.</p>
+    <p>Through my constructive peer-review contributions, I support authors in enhancing the clarity, scalability, and scientific impact of their research. My verified reviewer activity is available on <a href="https://orcid.org/0009-0009-7601-2001" target="_blank" rel="noopener">ORCID</a>, reflecting my ongoing commitment to maintaining the integrity and excellence of scholarly AI research published by Elsevier.</p>
+  download_link: /assets/pdf/orgs/volunteering/Certificate_EAAI_Recognised.pdf
+  gallery:
+    - /assets/img/orgs/volunteering/eaai-certificate-1.png
+
+- title: "Peer Reviewer – Elsevier"
+  organization: "MethodsX"
+  year: "2025"
+  logo: "/assets/img/orgs/methodX.jpg"
+  description: |
+    <p>Peer Reviewer for Elsevier’s MethodsX, improving clarity and reusability of methods papers. Verified on ORCID.</p>
+  details: |
+    <p>As a <strong>Peer Reviewer for <a href="https://www.journals.elsevier.com/methodsx" target="_blank" rel="noopener">MethodsX</a></strong>, I evaluate concise method papers focused on transparent and reproducible scientific practices. My reviews emphasize <em>clarity, replicability, methodological rigor, and cross-domain applicability</em>, ensuring that the published work meets high scholarly and practical standards.</p>
+    <p>Through my detailed feedback, I help authors enhance the accessibility and scientific integrity of their research methods—promoting the open dissemination of well-documented, reusable methodologies. My verified reviewer record is available on <a href="https://orcid.org/0009-0009-7601-2001" target="_blank" rel="noopener">ORCID</a>, demonstrating ongoing contributions to the global research community through Elsevier’s rigorous peer-review ecosystem.</p>
+  download_link: /assets/pdf/orgs/volunteering/Certificate_MEX_Recognised.pdf
+  gallery:
+    - /assets/img/orgs/volunteering/methodx-certificate.png
+    
+
 - title: "Mentor – TreeHack 2025"
   organization: "Standford University"
   year: "2025"
