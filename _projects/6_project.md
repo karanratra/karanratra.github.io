@@ -11,7 +11,7 @@ certificate: SigmaXi_MembershipCertificate.pdf
 
 <h4><b>🔬 Full Member – Sigma Xi, The Scientific Research Honor Society (2025)</b></h4>
 
-Elected as a <strong>Full Member</strong> of <a href="https://www.sigmaxi.org/" target="_blank">Sigma Xi</a>, the world’s largest general research honor society, recognizing <strong>noteworthy achievements in research</strong> and contributions to scientific advancement across disciplines.
+Elected as a <strong>Full Member</strong> of <a href="https://www.sigmaxi.org/home" target="_blank">Sigma Xi</a>, the world’s largest general research honor society, recognizing <strong>noteworthy achievements in research</strong> and contributions to scientific advancement across disciplines.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
