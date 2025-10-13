@@ -1,80 +1,47 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Sigma Xi – The Scientific Research Honor Society
+description: Elected as a Full Member of Sigma Xi, recognizing noteworthy achievements in research and scientific advancement.
+img: assets/img/memberships/sigmaxi.jpg
+importance: 2
+category: Memberships
+certificate_label: "View Certificate"
+certificate: SigmaXi_MembershipCertificate.pdf
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<h4><b>🔬 Full Member – Sigma Xi, The Scientific Research Honor Society (2025)</b></h4>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Elected as a <strong>Full Member</strong> of <a href="https://www.sigmaxi.org/" target="_blank">Sigma Xi</a>, the world’s largest general research honor society, recognizing <strong>noteworthy achievements in research</strong> and contributions to scientific advancement across disciplines.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/memberships/sigmaxi-certificate.png" title="Sigma Xi Membership Certificate" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    My Sigma Xi Full Membership Certificate
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+
+<p>As a Full Member, I join a global network of scientists, engineers, and innovators dedicated to promoting research excellence and integrity in science and technology.</p>
+
+<h4>This distinguished membership reflects my:</h4>
+<ul>
+  <li>Peer-recognized <strong>research contributions</strong> in distributed systems, e-commerce technology, and API security.</li>
+  <li>Publication of <strong>10+ scholarly papers</strong> in reputed journals such as IJCTT, IJGIS, and IJRASET, covering digital governance, AI-integrated architecture, and scalable system design.</li>
+  <li>Active engagement as a <strong>Reviewer and Judge</strong> for IEEE, Elsevier, and global research and innovation awards.</li>
+  <li>Commitment to advancing <strong>cross-disciplinary scientific research</strong> and fostering collaboration between academia and industry.</li>
+  <li>Leadership as a <strong>Distinguished Fellow of SCRS</strong> and <strong>Senior IEEE Member</strong>, strengthening my contributions to research-driven innovation.</li>
+</ul>
+
+<h4>About Sigma Xi:</h4>
+<p>
+Founded in 1886, Sigma Xi is one of the oldest and largest scientific honor societies in the world, with more than 500 chapters globally. 
+Membership is granted by nomination and election to individuals who have demonstrated <strong>noteworthy achievements in research</strong>. 
+Notable members include <strong>Albert Einstein, Linus Pauling, and Enrico Fermi</strong>.
+</p>
+
+<p><b>Member ID:</b> 20259995194</p>
+
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Proud to be part of a community of over 100,000 scientists and engineers advancing knowledge for the betterment of humanity.
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
