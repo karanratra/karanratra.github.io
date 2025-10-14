@@ -27,7 +27,7 @@ Elected as a <strong>Full Member</strong> of <a href="https://www.sigmaxi.org/ho
 <h4>This distinguished membership reflects my:</h4>
 <ul>
   <li>Peer-recognized <strong>research contributions</strong> in distributed systems, e-commerce technology, and API security.</li>
-  <li>Publication of <strong>10+ scholarly papers</strong> in reputed journals such as IJCTT, IJGIS, and IJRASET, covering digital governance, AI-integrated architecture, and scalable system design.</li>
+  <li>Publication of <strong>10+ scholarly papers</strong> in reputed journals such as IEEE, IJCTT, IJGIS, and IJRASET, covering digital governance, AI-integrated architecture, and scalable system design.</li>
   <li>Active engagement as a <strong>Reviewer and Judge</strong> for IEEE, Elsevier, and global research and innovation awards.</li>
   <li>Commitment to advancing <strong>cross-disciplinary scientific research</strong> and fostering collaboration between academia and industry.</li>
   <li>Leadership as a <strong>Distinguished Fellow of SCRS</strong> and <strong>Senior IEEE Member</strong>, strengthening my contributions to research-driven innovation.</li>
