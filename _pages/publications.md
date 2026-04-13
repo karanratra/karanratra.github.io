@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: Publications by categories in reversed chronological order.
 page_eyebrow: Research and Writing
-years: [2025, 2024]
+years: [2026, 2025, 2024]
 nav: true
 nav_order: 1
 ---
