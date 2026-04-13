@@ -2929,6 +2929,36 @@ html[data-theme=dark] .publications ol.bibliography li .links a.btn:hover {
   margin-top: 0.75rem;
 }
 
+.publications ol.bibliography li .badges .manual-citation-badge {
+  display: inline-flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 999px;
+  border: 1px solid rgba(37, 51, 69, 0.16);
+  background: linear-gradient(135deg, rgba(235, 240, 245, 0.98), rgba(225, 233, 239, 0.94));
+  box-shadow: 0 8px 20px rgba(20, 28, 43, 0.06);
+  color: #17212f;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.publications ol.bibliography li .badges .manual-citation-badge__label,
+.publications ol.bibliography li .badges .manual-citation-badge__count {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.34rem 0.62rem;
+  line-height: 1;
+}
+
+.publications ol.bibliography li .badges .manual-citation-badge__label {
+  border-right: 1px solid rgba(37, 51, 69, 0.12);
+}
+
+.publications ol.bibliography li .badges .manual-citation-badge__count {
+  font-weight: 800;
+}
+
 .publications ol.bibliography li div.abstract.hidden.open {
   margin-top: 0.9rem;
   padding: 1rem;
@@ -2939,6 +2969,17 @@ html[data-theme=dark] .publications ol.bibliography li .links a.btn:hover {
 
 html[data-theme=dark] .publications ol.bibliography li div.abstract.hidden.open {
   background: rgba(12, 18, 34, 0.62);
+}
+
+html[data-theme=dark] .publications ol.bibliography li .badges .manual-citation-badge {
+  border-color: rgba(159, 179, 207, 0.22);
+  background: linear-gradient(180deg, rgba(38, 52, 76, 0.98), rgba(28, 40, 60, 0.96));
+  box-shadow: 0 10px 22px rgba(2, 8, 23, 0.2);
+  color: #edf4ff;
+}
+
+html[data-theme=dark] .publications ol.bibliography li .badges .manual-citation-badge__label {
+  border-right-color: rgba(159, 179, 207, 0.18);
 }
 
 .cv .card,
