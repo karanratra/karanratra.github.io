@@ -23,7 +23,9 @@
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap">
 
     <!-- the Lightbox CSS -->
     <!-- In your _includes/head.html -->
@@ -56,7 +58,7 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav  layout-page">
 
     <!-- Header -->
     <header>
@@ -91,13 +93,13 @@
                 <a class="nav-link" href="/publications/">Publications<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">Memberships</a>
+                <a class="nav-link" href="/memberships/">Memberships</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/repositories/">Repositories</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">Resume</a>
+                <a class="nav-link" href="/resume/">Resume</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/volunteering/">Volunteering</a>
@@ -125,24 +127,47 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
-      <!-- page.html -->
-        <div class="post">
+    <main class="site-shell">
+      <div class="container page-shell mt-5">
+        <!-- page.html -->
+        <div class="post page-surface">
 
           <header class="post-header">
+            <p class="page-eyebrow">Research and Writing</p>
             <h1 class="post-title">Publications</h1>
             <p class="post-description">Publications by categories in reversed chronological order.</p>
           </header>
 
-          <article>
+          <article class="page-article">
             <!-- _pages/publications.md -->
 <div class="publications">
+
+<section class="featured-section page-intro-panel">
+  <div class="section-heading">
+    <p class="section-kicker">Research portfolio</p>
+    <h2>Writing and publication themes that connect academic inquiry with large-scale engineering practice</h2>
+  </div>
+  <div class="executive-signal-grid">
+    <article>
+      <h3>Distributed systems</h3>
+      <p>Applied and research-oriented work on resilient architectures, event-driven platforms, and scalable software systems.</p>
+    </article>
+    <article>
+      <h3>Cloud-native engineering</h3>
+      <p>Publications exploring cloud transformation, API ecosystems, observability, and modern operating models for enterprise platforms.</p>
+    </article>
+    <article>
+      <h3>AI and automation</h3>
+      <p>Research interests spanning intelligent automation, platform governance, and practical AI integration in engineering environments.</p>
+    </article>
+  </div>
+</section>
   <h2 class="year">2025</h2>
   <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE Xplore</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2025CCWC" class="col-sm-8">
@@ -186,7 +211,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE Xplore</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2025SUSTECH" class="col-sm-8">
@@ -230,7 +255,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE Xplore</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2025CCWC1" class="col-sm-8">
@@ -284,6 +309,261 @@
         </div>
       </div>
 </li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ratra2025SoutheastCon" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">AI-driven hybrid edge-cloud architecture for real-time big data analytics and scalable communication in retail supply chains</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Karan Kumar Ratra</em>, and Dhruv Kumar Seth</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In SoutheastCon 2025</em>, Jan 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;oe=ASCII&amp;user=ZIFgSN8AAAAJ&amp;citation_for_view=ZIFgSN8AAAAJ:2osOgNQ5qMEC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper presents a hybrid edge-cloud architecture for retail supply chains that combines real-time big data analytics with scalable communication patterns. The work focuses on low-latency processing, resilient distributed coordination, and practical architectural choices for large-scale retail environments.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ratra2025IEMCON1" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">AI-Enhanced API Gateway: A Unified Framework for Security and Performance for Next Generation Microservices</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Karan Kumar Ratra</em>, D. Kumar, D. Verma, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'H. Burman' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 2025 IEEE 16th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)</em>, Jan 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;oe=ASCII&amp;user=ZIFgSN8AAAAJ&amp;citation_for_view=ZIFgSN8AAAAJ:Se3iqnhoufwC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper proposes an AI-enhanced API gateway framework for next-generation microservices. The architecture focuses on improving security, traffic intelligence, and runtime performance by bringing adaptive controls and smarter policy enforcement into the API management layer.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ratra2025IEMCON2" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Designing High-Throughput Event-Driven Architectures for E-Commerce Fulfillment at Global Scale</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Karan Kumar Ratra</em>, Dhruv Kumar Seth, D. Verma, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'H. Burman' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 2025 IEEE 16th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)</em>, Jan 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;oe=ASCII&amp;user=ZIFgSN8AAAAJ&amp;citation_for_view=ZIFgSN8AAAAJ:roLk4NBRz8UC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper examines event-driven architectural patterns for global-scale e-commerce fulfillment systems. The work emphasizes throughput, asynchronous coordination, and scalable platform design for inventory, order orchestration, and fulfillment operations.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ratra2025ACROSET1" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">Pioneering Change Management Solutions: A Design Approach to AI-Driven Scheduling Systems for Organizational Operational Excellence</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        D. Verma, H. Burman, and <em>Karan Kumar Ratra</em>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 2025 IEEE International Conference on Advances in Computing Research on Science Engineering and Technology (ACROSET)</em>, Jan 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;oe=ASCII&amp;user=ZIFgSN8AAAAJ&amp;citation_for_view=ZIFgSN8AAAAJ:WF5omc3nYNoC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper studies AI-driven scheduling systems as a design response to organizational change-management challenges. It focuses on operational excellence, decision support, and the use of intelligent scheduling to improve coordination inside complex enterprise environments.</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="Ratra2025ACROSET2" class="col-sm-8">
+        <!-- Title -->
+        <div class="title">From Clicks to Community: Leveraging Social Computing, Data Mining, and Generative AI for Customer Retention and Ecosystem Growth in ECommerce</div>
+        <!-- Author -->
+        <div class="author">
+        
+
+        <em>Karan Kumar Ratra</em>, Dhruv Kumar Seth, D. Verma, and
+          <span class="more-authors" title="click to view 1 more author" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '1 more author' ? 'H. Burman' : '1 more author';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">1 more author</span>
+</div>
+
+        <!-- Journal/Book title and date -->
+        
+        
+        <div class="periodical">
+          <em>In 2025 IEEE International Conference on Advances in Computing Research on Science Engineering and Technology (ACROSET)</em>, Jan 2025
+        </div>
+        <div class="periodical">
+          
+        </div>
+
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;oe=ASCII&amp;user=ZIFgSN8AAAAJ&amp;citation_for_view=ZIFgSN8AAAAJ:eQOLeE2rZwMC" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper explores how social computing, data mining, and generative AI can be combined to strengthen customer retention and ecosystem growth in e-commerce. The emphasis is on turning interaction data into durable community-building and long-term engagement strategies.</p>
+          </div>
+        </div>
+      </div>
+</li>
 </ol>
 
   <h2 class="year">2024</h2>
@@ -291,7 +571,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJCTT</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://www.ijcttjournal.org/" rel="external nofollow noopener" target="_blank">IJCTT</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJCTT" class="col-sm-8">
@@ -335,7 +615,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJCTT</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://www.ijcttjournal.org/" rel="external nofollow noopener" target="_blank">IJCTT</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJCTT1" class="col-sm-8">
@@ -380,7 +660,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJGIS</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ijgis.pubpub.org/" rel="external nofollow noopener" target="_blank">IJGIS</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJGIS" class="col-sm-8">
@@ -423,7 +703,7 @@
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJRASET</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://www.ijraset.com/" rel="external nofollow noopener" target="_blank">IJRASET</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJRASET" class="col-sm-8">
@@ -486,15 +766,25 @@
 
         </div>
 
-    </div>
+      </div>
+    </main>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2025 Karan Kumar  Ratra. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-
+        <span class="footer-brand">Karan Kumar  Ratra</span>
+        <span class="footer-sep">·</span>
+        <span>© 2026</span>
+        <span class="footer-sep">·</span>
+        <span>Systems leadership, technical strategy, and durable execution across global-scale platforms.
+</span>
       </div>
     </footer>
+
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
 
     <!-- JavaScripts -->
     <!-- jQuery -->
@@ -513,6 +803,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
   <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/back_to_top.js"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
     

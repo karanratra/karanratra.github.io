@@ -24,7 +24,9 @@
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap">
 
     <!-- the Lightbox CSS -->
     <!-- In your _includes/head.html -->
@@ -57,7 +59,7 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav  layout-archive-tag">
 
     <!-- Header -->
     <header>
@@ -92,13 +94,13 @@
                 <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">Memberships</a>
+                <a class="nav-link" href="/memberships/">Memberships</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/repositories/">Repositories</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">Resume</a>
+                <a class="nav-link" href="/resume/">Resume</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/volunteering/">Volunteering</a>
@@ -126,15 +128,17 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
-      <div class="post">
+    <main class="site-shell">
+      <div class="container page-shell mt-5">
+        <div class="post page-surface archive-shell">
 
   <header class="post-header">
+    <p class="page-eyebrow">Archive</p>
     <h1 class="post-title"> <i class="fas fa-hashtag fa-sm"></i> software-architectures </h1>
     <p class="post-description"> an archive of posts with this tag </p>
   </header>
 
-  <article>
+  <article class="page-article">
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
         
@@ -151,15 +155,25 @@
 
 </div>
 
-    </div>
+      </div>
+    </main>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2025 Karan Kumar  Ratra. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-
+        <span class="footer-brand">Karan Kumar  Ratra</span>
+        <span class="footer-sep">·</span>
+        <span>© 2026</span>
+        <span class="footer-sep">·</span>
+        <span>Systems leadership, technical strategy, and durable execution across global-scale platforms.
+</span>
       </div>
     </footer>
+
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
 
     <!-- JavaScripts -->
     <!-- jQuery -->
@@ -178,6 +192,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
   <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/back_to_top.js"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
     

@@ -24,7 +24,9 @@
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap">
 
     <!-- the Lightbox CSS -->
     <!-- In your _includes/head.html -->
@@ -57,7 +59,7 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav  layout-about">
 
     <!-- Header -->
     <header>
@@ -92,13 +94,13 @@
                 <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/projects/">Memberships</a>
+                <a class="nav-link" href="/memberships/">Memberships</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/repositories/">Repositories</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">Resume</a>
+                <a class="nav-link" href="/resume/">Resume</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/volunteering/">Volunteering</a>
@@ -126,63 +128,159 @@
 
 
     <!-- Content -->
-    <div class="container mt-5">
-      <!-- about.html -->
-      <div class="post">
+    <main class="site-shell">
+      <div class="container page-shell mt-5">
+        <!-- about.html -->
+      <div class="post landing-surface">
         <header class="post-header">
+          <p class="page-eyebrow">Executive Profile</p>
           <h1 class="post-title">
            <span class="font-weight-bold">Karan Kumar</span>  <span class="font-weight-bold">Ratra</span>
           </h1>
-          <p class="desc"><a href="https://tech.walmart.com/content/walmart-global-tech/en_us.html" target="_blank" rel="external nofollow noopener">Walmart Global Tech· Sunnyvale, CA</a> </p>
-<p><b>Innovative E-Commerce Systems Architect and Technology Leader in Retail Technology </b></p>
+          <p class="desc">Driving Scalable E-Commerce &amp; Retail Innovation • <a href="https://tech.walmart.com/content/walmart-global-tech/en_us.html" target="_blank" rel="external nofollow noopener">Walmart Global Tech</a>• Sunnyvale, California</p>
         </header>
 
         <article>
-          <div class="profile float-right">
-
-              <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/prof_pic.jpg" class="img-fluid z-depth-1 rounded" width="auto" height="auto" alt="prof_pic.jpg" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-            <div class="address">
-              <p>Driving Scalable Retail Innovation</p>
-
-            </div>
-          </div>
+          
 
           <div class="clearfix">
-            <p><strong>Karan Kumar Ratra</strong> is a <strong>Senior Engineering Leader at Walmart Global Tech</strong>, where he leads globally distributed engineering teams building high-throughput, event-driven systems for the world’s largest retailer. With more than <strong>16 years of experience</strong> across <strong>e-commerce, fintech, and telecom</strong>, he has architected and scaled platforms that handle <strong>100M+ daily messages</strong> and power mission-critical retail operations.</p>
+            <section class="hero-intro">
+  <div class="hero-intro__layout">
+    <div class="hero-intro__content">
+      <p class="hero-kicker">Senior Engineering Leader | Distributed Systems | Retail Technology</p>
+      <h4>Building resilient, high-scale commerce platforms that turn engineering complexity into measurable business impact.</h4>
+      <p class="hero-summary">
+        I lead globally distributed teams at Walmart Global Tech, architecting event-driven platforms that power fulfillment,
+        customer remediation, and enterprise-scale retail operations. My work spans more than <strong>16 years</strong> across
+        <strong>retail, fintech, and telecom</strong>, with a focus on scalable systems, strong engineering cultures, and outcomes that
+        matter to customers and the business.
+      </p>
+      <div class="hero-proof-strip">
+        <span>Walmart Global Tech</span>
+        <span>Platform architecture</span>
+        <span>Engineering leadership</span>
+        <span>Thought leadership</span>
+      </div>
+      <!-- <div class="hero-actions">
+        <a class="hero-action-link" href="/resume/">View Resume</a>
+        <a class="hero-action-link" href="/memberships/">Explore Memberships</a>
+      </div> -->
+      <div class="home-anchor-nav">
+        <a href="/publications/">Research</a>
+        <a href="/blog/">Writing</a>
+        <a href="/repositories/">Open Source</a>
+        <a href="/volunteering/">Community</a>
+      </div>
+    </div>
+    <aside class="hero-portrait">
+      <div class="hero-portrait__frame">
+        <img src="/assets/img/prof_pic.jpg" alt="Karan Kumar Ratra portrait" class="hero-portrait__image">
+        <!-- <div class="hero-portrait__caption">Driving Scalable Retail Innovation</div> -->
+      </div>
+    </aside>
+  </div>
+</section>
 
-<p>Over the course of his career, Karan has delivered transformative technology initiatives:</p>
+<section class="hero-metrics">
+  <div class="metric-card">
+    <span class="metric-value">16+</span>
+    <span class="metric-label">Years across retail, fintech, and telecom</span>
+  </div>
+  <div class="metric-card">
+    <span class="metric-value">100M+</span>
+    <span class="metric-label">Daily messages orchestrated in fulfillment systems</span>
+  </div>
+  <div class="metric-card">
+    <span class="metric-value">25%</span>
+    <span class="metric-label">Platform efficiency improvement delivered at Walmart</span>
+  </div>
+  <div class="metric-card">
+    <span class="metric-value">$10M</span>
+    <span class="metric-label">Potential regulatory exposure prevented at PayPal</span>
+  </div>
+</section>
 
-<ul>
-  <li>
-<strong>Walmart Fulfillment Management System (FMS):</strong> Architected and evolved Walmart’s core fulfillment platform, improving efficiency by 25% and reducing operational costs by 15%.</li>
-  <li>
-<strong>PayPal Risk &amp; Compliance Systems:</strong> Built compliance APIs and frameworks that prevented a potential <strong>$10M regulatory fine</strong>, earning him the prestigious <strong>PayPal Golden Envelope Award</strong>.</li>
-  <li>
-<strong>Subex Credit Risk Management Platform:</strong> Designed scalable credit risk engines now deployed at Tier-1 and Tier-2 telecom operators worldwide.</li>
-</ul>
+<section class="featured-section executive-signal">
+  <div class="section-heading">
+    <p class="section-kicker">Executive Lens</p>
+    <h2>Leading platforms the way product organizations need them led</h2>
+  </div>
+  <div class="executive-signal-grid">
+    <article>
+      <h3>Business-aligned architecture</h3>
+      <p>I translate platform complexity into operating leverage, building systems that improve fulfillment, resilience, and customer outcomes at enterprise scale.</p>
+    </article>
+    <article>
+      <h3>Engineering leadership</h3>
+      <p>I lead globally distributed teams through architecture reviews, delivery execution, technical mentoring, and long-horizon modernization programs.</p>
+    </article>
+    <article>
+      <h3>Thought leadership</h3>
+      <p>Across research, writing, mentoring, and open source, I contribute practical perspectives on distributed systems, cloud platforms, and modern engineering culture.</p>
+    </article>
+  </div>
+</section>
 
-<p>Karan is also recognized as a <strong>thought leader and mentor</strong>:</p>
-<ul>
-  <li>
-<strong>Awards:</strong> Walmart Impact Award 2024, multiple Walmart Excellence Awards, PayPal Golden Envelope Award, eBay Skunkworks Hackathon Winner, and more.</li>
-  <li>
-<strong>Mentorship &amp; Community:</strong> Top 1% Mentor on ADPList, Judge and Mentor at global hackathons including HackMIT, HackHarvard, and NASA Space Apps Challenge.</li>
-  <li>
-<strong>Scholarship &amp; Recognition:</strong> Senior IEEE Member, Distinguished Fellow of the Soft Computing Research Society (SCRS), Raptor Fellow, and Globee Award Winner (Technology Innovator, Engineering Excellence).</li>
-</ul>
+<section class="featured-section narrative-section">
+  <div class="section-heading">
+    <p class="section-kicker">Leadership Story</p>
+    <h2>Operating at the intersection of architecture, execution, and people leadership</h2>
+  </div>
+  <p><strong>Karan Kumar Ratra</strong> is a <strong>Senior Engineering Leader at Walmart Global Tech</strong>, where he leads globally distributed engineering teams building high-throughput, event-driven systems for the world’s largest retailer. He partners across product, operations, and engineering to deliver platforms that improve reliability, unlock customer experience gains, and scale across markets.</p>
+  <p>His background combines <strong>architecture depth, operating rigor, and people leadership</strong>. Across enterprise modernization, asynchronous microservices, and cloud-native transformation, he has repeatedly built systems that improve throughput, resilience, and cost efficiency while helping teams grow into stronger technical organizations.</p>
+</section>
 
-<p>He is passionate about <strong>scalable distributed systems, event-driven architectures, and AI-driven innovation in retail technology</strong>. Beyond his technical expertise, Karan focuses on <strong>mentorship, cross-functional leadership, and fostering engineering excellence</strong> to deliver measurable business impact.</p>
+<section class="featured-section case-study-section">
+  <div class="section-heading">
+    <p class="section-kicker">Platform Impact</p>
+    <h2>Representative systems and leadership outcomes across retail, fintech, and telecom</h2>
+  </div>
+  <div class="case-study-grid">
+    <article class="case-study-card case-study-card--featured">
+      <p class="impact-label">Retail Scale</p>
+      <h3>Walmart Fulfillment Management System</h3>
+      <p>Architected and institutionalized a unified, event-driven fulfillment orchestration platform powering omnichannel commerce at global scale, enabling seller-agnostic, channel-agnostic, and geography-agnostic execution.</p>
+      <ul class="case-study-points">
+        <li>Orchestrates 100M+ daily events across U.S., Canada, Mexico, and cross-border fulfillment networks</li>
+        <li>Enabled Fulfillment-as-a-Service (FaaS) and supports Walmart Fulfillment Services (WFS) for third-party sellers</li>
+        <li>Built event-driven microservices architecture with asynchronous orchestration and failure-resilient workflows</li>
+        <li>Reduced operational costs by 15% and improved fulfillment efficiency by 25%+</li>
+        <li>Established a reusable orchestration framework adopted across Walmart and subsidiary platforms (including Sam’s Club and international markets), enabling rapid onboarding of new fulfillment capabilities and business models</li>
+      </ul>
+    </article>
+    <article class="case-study-card">
+      <p class="impact-label">Fintech Risk</p>
+      <h3>PayPal Compliance and Risk Platforms</h3>
+      <p>Built compliance APIs and frameworks that prevented a potential $10M regulatory fine and strengthened governance across global payment workflows.</p>
+    </article>
+    <article class="case-study-card">
+      <p class="impact-label">Telecom Platforms</p>
+      <h3>Credit Risk Systems At Global Scale</h3>
+      <p>Designed scalable credit risk engines deployed by Tier-1 and Tier-2 telecom operators across multiple regions.</p>
+    </article>
+    <article class="case-study-card">
+      <p class="impact-label">Team Development</p>
+      <h3>Engineering culture and talent growth</h3>
+      <p>Mentored engineers and managers, strengthened design review practices, and built durable execution habits across globally distributed teams.</p>
+    </article>
+      <article class="case-study-card">
+      <p class="impact-label">GLOBAL INFLUENCE</p>
+      <h3>Industry recognition and thought leadership</h3>
+      <p>Recognized globally through Forbes Technology Council contributions, prestigious industry judging (Globee, Claro, BIG), and IEEE research leadership, influencing modern platform architecture and AI-driven systems.</p>
+    </article>
+  </div>
+</section>
+
+<section class="featured-section credentials-band">
+  <div>
+    <p class="section-kicker">Recognition</p>
+    <ul>
+      <li>Walmart Impact Award 2024, multiple Walmart Excellence Awards, and PayPal Golden Envelope Award</li>
+      <li>Senior IEEE Member, Distinguished Fellow of SCRS, Raptor Fellow, and Globee Award winner</li>
+      <li>Top 1% Mentor on ADPList and judge or mentor for HackMIT, HackHarvard, and NASA Space Apps Challenge</li>
+    </ul>
+  </div>
+</section>
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
@@ -191,9 +289,50 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
           </div>
+          
+          <!-- And these sections later, once we have the latest data that we can show it -->
+          <!-- 
+          <section class="insight-strip">
+            <div class="insight-panel">
+              <div class="section-heading">
+                <p class="section-kicker">Writing</p>
+                <h2><a href="/blog/">Recent Writing</a></h2>
+              </div>
+              <p class="panel-intro">A journal of ideas on distributed systems, cloud platforms, resilience, and engineering leadership.</p>
+          <div class="news">
+            <div class="table-responsive" style="max-height: 10vw">
+              <table class="table table-sm table-borderless">
+              
+                <tr>
+                  <th scope="row">Jan 15, 2026</th>
+                  <td>
+                    <a class="news-title" href="/blog/2026/redirect-20260115/">AI for Personalized Commerce Beyond Recommendations: Real-Time Intent Prediction</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Dec 15, 2025</th>
+                  <td>
+                    <a class="news-title" href="/blog/2025/redirect-20251215/">From Cost Center to Growth Engine: Architecting Internal API Platforms for Strategic Advantage</a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Dec 2, 2025</th>
+                  <td>
+                    <a class="news-title" href="/blog/2025/redirect-20251202/">From Black Friday to Everyday: Architecting Elastic E-Commerce Systems for Peak Performance</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
 
-          <!-- News -->
-          <!-- <h2><a href="/news/" style="color: inherit;">News</a></h2>
+            </div>
+
+            <div class="insight-panel">
+              <div class="section-heading">
+                <p class="section-kicker">Updates</p>
+                <h2><a href="/news/">Recent Highlights</a></h2>
+              </div>
+              <p class="panel-intro">Selected milestones spanning awards, community leadership, research, and industry recognition.</p>
           <div class="news">
             <div class="table-responsive" >
               <table class="table table-sm table-borderless">
@@ -221,45 +360,23 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
               </table>
             </div>
           </div>
- -->
 
-          <!-- Latest posts -->
-          <!-- <h2><a href="/blog/" style="color: inherit;">Latest Posts</a></h2>
-          <div class="news">
-            <div class="table-responsive" style="max-height: 10vw">
-              <table class="table table-sm table-borderless">
-              
-                <tr>
-                  <th scope="row">Nov 2, 2025</th>
-                  <td>
-                    <a class="news-title" href="/blog/2025/redirect-20251102/">From Scaling to Healing - Designing Resilient Cloud Architectures</a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jun 11, 2025</th>
-                  <td>
-                    <a class="news-title" href="/blog/2025/redirect-20250611/">Accelerating DevOps Pipelines With AI-Native Testing</a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Jun 2, 2025</th>
-                  <td>
-                    <a class="news-title" href="/blog/2025/redirect-20250602/">How to make AI work in QA</a>
-                  </td>
-                </tr>
-              </table>
             </div>
-          </div>
- -->
+          </section> -->
 
           <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
+          <section class="featured-section">
+              <div class="section-heading">
+                <p class="section-kicker">Research</p>
+                <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
+              </div>
+              <p class="panel-intro">Research and applied work focused on distributed systems, cloud-native platforms, and AI-enabled engineering systems.</p>
           <div class="publications">
             <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE Xplore</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2025CCWC" class="col-sm-8">
@@ -303,7 +420,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE Xplore</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2025SUSTECH" class="col-sm-8">
@@ -347,7 +464,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IEEE Xplore</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ieeexplore.ieee.org/" rel="external nofollow noopener" target="_blank">IEEE Xplore</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2025CCWC1" class="col-sm-8">
@@ -404,7 +521,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJCTT</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://www.ijcttjournal.org/" rel="external nofollow noopener" target="_blank">IJCTT</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJCTT" class="col-sm-8">
@@ -448,7 +565,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJCTT</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://www.ijcttjournal.org/" rel="external nofollow noopener" target="_blank">IJCTT</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJCTT1" class="col-sm-8">
@@ -493,7 +610,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJGIS</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://ijgis.pubpub.org/" rel="external nofollow noopener" target="_blank">IJGIS</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJGIS" class="col-sm-8">
@@ -536,7 +653,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge">IJRASET</abbr></div>
+        <div class="col-sm-2 abbr"><abbr class="badge"><a href="https://www.ijraset.com/" rel="external nofollow noopener" target="_blank">IJRASET</a></abbr></div>
 
         <!-- Entry bib key -->
         <div id="Ratra2024IJRASET" class="col-sm-8">
@@ -593,12 +710,14 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 </ol>
           </div>
 
+            </section>
 
           <!-- Social -->
-            <div class="social">
+            <div class="social featured-section">
               <div class="contact-icons">
                 <a href="mailto:%6B%61%72%61%6E%72%61%74%72%61%30%37@%67%6D%61%69%6C.%63%6F%6D" title="email"><i class="fas fa-envelope"></i></a>
             <a href="https://orcid.org/0009-0009-7601-2001" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
+            <a href="https://scholar.google.com/citations?user=ZIFgSN8AAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
             <a href="https://github.com/karanratra" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/karanratra07" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/karanratra007" title="Twitter" rel="external nofollow noopener" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -618,15 +737,25 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 </div>
 
-    </div>
+      </div>
+    </main>
 
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2025 Karan Kumar  Ratra. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
-
+        <span class="footer-brand">Karan Kumar  Ratra</span>
+        <span class="footer-sep">·</span>
+        <span>© 2026</span>
+        <span class="footer-sep">·</span>
+        <span>Systems leadership, technical strategy, and durable execution across global-scale platforms.
+</span>
       </div>
     </footer>
+
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
 
     <!-- JavaScripts -->
     <!-- jQuery -->
@@ -645,6 +774,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js" integrity="sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8=" crossorigin="anonymous"></script>
   <script defer src="/assets/js/zoom.js"></script><!-- Load Common JS -->
   <script defer src="/assets/js/common.js"></script>
+  <script defer src="/assets/js/back_to_top.js"></script>
   <script defer src="/assets/js/copy_code.js" type="text/javascript"></script>
 
     
