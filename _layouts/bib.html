@@ -183,6 +183,12 @@
           </div>
           {% if site.badges %}
           <div class="badges">
+            {%- if entry.citations %}
+              <span class="manual-citation-badge" title="Google Scholar citations">
+                <span class="manual-citation-badge__label">Citations</span>
+                <span class="manual-citation-badge__count">{{ entry.citations }}</span>
+              </span>
+            {%- else %}
             {%- if site.badges.altmetric_badge %}
             <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"
               {% if entry.eprint %}
@@ -208,6 +214,7 @@
                 data-id="{{ entry.dimensions }}"
               {% endif %}
               data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+            {%- endif %}
             {%- endif %}
           </div>
           {%- endif %}
