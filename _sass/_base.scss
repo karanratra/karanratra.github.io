@@ -1649,14 +1649,20 @@ h6,
   margin-bottom: 1rem;
 }
 
-.section-heading h2 {
+.section-heading h2,
+.section-heading h3,
+.section-heading h4 {
   font-size: clamp(1.3rem, 2.2vw, 1.75rem);
   line-height: 1.14;
   margin-bottom: 0;
 }
 
 .executive-signal .section-heading h2,
-.narrative-section .section-heading h2 {
+.executive-signal .section-heading h3,
+.executive-signal .section-heading h4,
+.narrative-section .section-heading h2,
+.narrative-section .section-heading h3,
+.narrative-section .section-heading h4 {
   font-size: clamp(1.3rem, 2.2vw, 1.75rem);
   line-height: 1.14;
 }
@@ -1974,10 +1980,19 @@ html[data-theme='dark'] .hero-intro {
   color: var(--global-text-color);
   font-size: 0.82rem;
   font-weight: 500;
+  box-shadow: 0 6px 14px rgba(20, 28, 43, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
+  cursor: default;
 }
 
 html[data-theme='dark'] .hero-proof-strip span {
   background: var(--surface-panel);
+}
+
+.hero-proof-strip span:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59, 83, 109, 0.28);
+  box-shadow: 0 12px 24px rgba(20, 28, 43, 0.1);
 }
 
 .hero-actions {
@@ -2022,6 +2037,8 @@ html[data-theme='dark'] .hero-proof-strip span {
   color: var(--global-text-color-light);
   font-size: 0.84rem;
   text-decoration: none;
+  box-shadow: 0 6px 14px rgba(20, 28, 43, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
 }
 
 html[data-theme='dark'] .home-anchor-nav a {
@@ -2038,6 +2055,8 @@ html[data-theme='dark'] .hero-action-link {
   border-color: rgba(59, 83, 109, 0.28);
   background: var(--surface-panel);
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(20, 28, 43, 0.1);
 }
 
 .btn,

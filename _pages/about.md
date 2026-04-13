@@ -13,14 +13,12 @@ social: true  # includes social icons at the bottom of the page
 <section class="hero-intro">
   <div class="hero-intro__layout">
     <div class="hero-intro__content">
-      <p class="hero-kicker">Senior Engineering Leader | Distributed Systems | Retail Technology</p>
-      <h4>Building resilient, high-scale commerce platforms that turn engineering complexity into measurable business impact.</h4>
+      <p class="hero-kicker">Senior Engineering Leader at Walmart Global Tech | Turning complex distributed systems into scalable retail impact</p>
+      <!-- <h5>Building resilient, high-scale commerce platforms that turn engineering complexity into measurable business impact.</h5> -->
       <p class="hero-summary">
-        I lead globally distributed teams at Walmart Global Tech, architecting event-driven platforms that power fulfillment,
-        customer remediation, and enterprise-scale retail operations. My work spans more than <strong>16 years</strong> across
-        <strong>retail, fintech, and telecom</strong>, with a focus on scalable systems, strong engineering cultures, and outcomes that
-        matter to customers and the business.
+      I lead globally distributed teams at Walmart Global Tech, architecting event-driven platforms that power <strong> fulfillment, customer remediation, and enterprise-scale retail operations </strong>. I drive the design of systems operating at massive scale, delivering resilient, high-performance platforms that directly impact customer experience and business outcomes.
       </p>
+      <p class="hero-summary" > I focus on building reusable platform architectures that enable scalable, resilient, and high-performance systems at global scale. My work emphasizes transforming complex distributed systems into production-grade platforms that drive measurable efficiency, reliability, and business impact. </p>
       <div class="hero-proof-strip">
         <span>Walmart Global Tech</span>
         <span>Platform architecture</span>
@@ -69,7 +67,7 @@ social: true  # includes social icons at the bottom of the page
 <section class="featured-section executive-signal">
   <div class="section-heading">
     <p class="section-kicker">Executive Lens</p>
-    <h2>Leading platforms the way product organizations need them led</h2>
+    <h4>Leading platforms the way product organizations need them led</h4>
   </div>
   <div class="executive-signal-grid">
     <article>
@@ -90,7 +88,9 @@ social: true  # includes social icons at the bottom of the page
 <section class="featured-section narrative-section">
   <div class="section-heading">
     <p class="section-kicker">Leadership Story</p>
-    <h2>Operating at the intersection of architecture, execution, and people leadership</h2>
+    <!-- <p class="hero-kicker">Leadership Story</p> -->
+
+    <h4>Operating at the intersection of architecture, execution, and people leadership</h4>
   </div>
   <p><strong>Karan Kumar Ratra</strong> is a <strong>Senior Engineering Leader at Walmart Global Tech</strong>, where he leads globally distributed engineering teams building high-throughput, event-driven systems for the world’s largest retailer. He partners across product, operations, and engineering to deliver platforms that improve reliability, unlock customer experience gains, and scale across markets.</p>
   <p>His background combines <strong>architecture depth, operating rigor, and people leadership</strong>. Across enterprise modernization, asynchronous microservices, and cloud-native transformation, he has repeatedly built systems that improve throughput, resilience, and cost efficiency while helping teams grow into stronger technical organizations.</p>
@@ -99,7 +99,7 @@ social: true  # includes social icons at the bottom of the page
 <section class="featured-section case-study-section">
   <div class="section-heading">
     <p class="section-kicker">Platform Impact</p>
-    <h2>Representative systems and leadership outcomes across retail, fintech, and telecom</h2>
+    <h4>Representative systems and leadership outcomes across retail, fintech, and telecom</h4>
   </div>
   <div class="case-study-grid">
     <article class="case-study-card case-study-card--featured">
