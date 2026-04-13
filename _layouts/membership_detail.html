@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="post page-surface membership-detail-shell">
+  <header class="post-header membership-detail-header">
+    <p class="page-eyebrow">{{ page.page_eyebrow | default: "Membership Detail" }}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article class="page-article membership-detail-article">
+    <section class="featured-section membership-detail-overview">
+      <div class="membership-detail-overview__layout">
+        <div class="membership-detail-overview__content">
+          <p class="section-kicker">Professional Recognition</p>
+          <h2>{{ page.title }}</h2>
+          <p class="membership-detail-summary">{{ page.description }}</p>
+          <div class="membership-detail-actions">
+            {% if page.certificate %}
+              <a class="repo-card-link" href="{{ page.certificate | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener">
+                {{ page.certificate_label | default: "View Certificate" }}
+              </a>
+            {% endif %}
+            <a class="repo-card-link" href="{{ '/memberships/' | relative_url }}">Back to Memberships</a>
+          </div>
+        </div>
+        {% if page.img %}
+        <div class="membership-detail-overview__media">
+          <div class="membership-detail-logo">
+            {% include figure.html path=page.img alt=page.title %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+
+    <div class="membership-detail-content">
+      {{ content }}
+    </div>
+  </article>
+</div>

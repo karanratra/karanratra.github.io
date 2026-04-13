@@ -1,7 +1,11 @@
     {% if site.footer_fixed %}
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+        <span class="footer-brand">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
+        <span class="footer-sep">·</span>
+        <span>&copy; {{ site.time | date: '%Y' }}</span>
+        <span class="footer-sep">·</span>
+        <span>{{ site.footer_text }}</span>
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}
@@ -13,7 +17,11 @@
     {%- else -%}
     <footer class="sticky-bottom mt-5">
       <div class="container">
-        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+        <span class="footer-brand">{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}</span>
+        <span class="footer-sep">·</span>
+        <span>&copy; {{ site.time | date: '%Y' }}</span>
+        <span class="footer-sep">·</span>
+        <span>{{ site.footer_text }}</span>
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}
@@ -23,3 +31,12 @@
       </div>
     </footer>
     {%- endif %}
+
+    <button
+      type="button"
+      class="back-to-top"
+      id="back-to-top"
+      aria-label="Back to top"
+      title="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>

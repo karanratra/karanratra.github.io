@@ -3,8 +3,9 @@ layout: default
 ---
 
 <!-- about.html -->
-      <div class="post">
+      <div class="post landing-surface">
         <header class="post-header">
+          <p class="page-eyebrow">Executive Profile</p>
           <h1 class="post-title">
            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} <span class="font-weight-bold">{{ site.last_name }}</span>{%- else -%}{{ site.title }}{%- endif %}
           </h1>
@@ -39,28 +40,49 @@ layout: default
           <div class="clearfix">
             {{ content }}
           </div>
+          
+          <!-- And these sections later, once we have the latest data that we can show it -->
+          <!-- {% if page.news or page.latest_posts %}
+          <section class="insight-strip">
+            {% if page.latest_posts -%}
+            <div class="insight-panel">
+              <div class="section-heading">
+                <p class="section-kicker">Writing</p>
+                <h2><a href="{{ '/blog/' | relative_url }}">Recent Writing</a></h2>
+              </div>
+              <p class="panel-intro">A journal of ideas on distributed systems, cloud platforms, resilience, and engineering leadership.</p>
+              {%- include latest_posts.html %}
+            </div>
+            {%- endif %}
 
-          <!-- News -->
-          <!-- {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
-            {%- include news.html %}
-          {%- endif %} -->
-
-          <!-- Latest posts -->
-          <!-- {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">Latest Posts</a></h2>
-            {%- include latest_posts.html %}
+            {% if page.news -%}
+            <div class="insight-panel">
+              <div class="section-heading">
+                <p class="section-kicker">Updates</p>
+                <h2><a href="{{ '/news/' | relative_url }}">Recent Highlights</a></h2>
+              </div>
+              <p class="panel-intro">Selected milestones spanning awards, community leadership, research, and industry recognition.</p>
+              {%- include news.html %}
+            </div>
+            {%- endif %}
+          </section>
           {%- endif %} -->
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
-            {%- include selected_papers.html %}
+            <section class="featured-section">
+              <div class="section-heading">
+                <p class="section-kicker">Research</p>
+                <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
+              </div>
+              <p class="panel-intro">Research and applied work focused on distributed systems, cloud-native platforms, and AI-enabled engineering systems.</p>
+              {%- include selected_papers.html %}
+            </section>
           {%- endif %}
 
           <!-- Social -->
           {%- if page.social %}
-            <div class="social">
+            <div class="social featured-section">
               <div class="contact-icons">
                 {% include social.html %}
               </div>

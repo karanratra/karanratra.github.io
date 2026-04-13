@@ -2,14 +2,15 @@
 layout: default
 ---
 
-<div class="post">
+<div class="post page-surface archive-shell">
 
   <header class="post-header">
+    <p class="page-eyebrow">Archive</p>
     <h1 class="post-title"> <i class="fas fa-calendar fa-sm"></i> {{ page.date | date: "%Y" }} </h1>
     <p class="post-description"> an archive of posts from this year </p>
   </header>
 
-  <article>
+  <article class="page-article">
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
         {% for post in page.posts %}

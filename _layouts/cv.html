@@ -2,19 +2,39 @@
 layout: default
 ---
 <!-- _layouts/cv.html -->
-        <div class="post">
+        <div class="post page-surface cv-shell">
 
           <header class="post-header">
-            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+            <p class="page-eyebrow">{{ page.page_eyebrow | default: "Leadership Resume" }}</p>
+            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right resume-download"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
             <p class="post-description">{{ page.description }}</p>
           </header>
 
           <article>
+            {% if page.executive_summary %}
+              <section class="featured-section executive-summary-band">
+                <div class="section-heading">
+                  <p class="section-kicker">Executive Summary</p>
+                  <h2>{{ page.executive_summary.heading }}</h2>
+                </div>
+                <div class="executive-summary-grid">
+                  {% for item in page.executive_summary.points %}
+                    <article>
+                      <h3>{{ item.title }}</h3>
+                      <p>{{ item.description }}</p>
+                    </article>
+                  {% endfor %}
+                </div>
+              </section>
+            {% endif %}
             <div class="cv">
               {% for entry in site.data.cv %}
-                <div class="card mt-3 p-3">
-                  <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-                  <div>
+                <section class="card mt-3 p-3 cv-section-card">
+                  <div class="cv-section-head">
+                    <p class="section-kicker">Resume Section</p>
+                    <h2 class="card-title font-weight-medium">{{ entry.title }}</h2>
+                  </div>
+                  <div class="cv-section-body">
                   {% if entry.type == "list" %}
                     {% include cv/list.html %}
                   {% elsif entry.type == "map" %}
@@ -27,7 +47,7 @@ layout: default
                     {{ entry.contents }}
                   {% endif %}
                   </div>
-                </div>
+                </section>
               {% endfor %}
               </div>
           </article>

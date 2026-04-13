@@ -1,0 +1,31 @@
+<article class="repo repo-card membership-card">
+  <a class="membership-card-link" href="{{ membership.url | relative_url }}">
+    <div class="repo-card-top">
+      <div class="repo-card-meta">
+        <p class="impact-label">Membership</p>
+        <h3>{{ membership.title }}</h3>
+      </div>
+    </div>
+
+    {% if membership.img %}
+    <div class="membership-card-media">
+      {%- include figure.html
+        path=membership.img
+        alt=membership.title -%}
+    </div>
+    {% endif %}
+
+    <div class="repo-card-body">
+      <p class="repo-card-text">{{ membership.description }}</p>
+    </div>
+  </a>
+
+  <div class="repo-card-actions">
+    {% if membership.certificate %}
+      <a class="repo-card-link" href="{{ membership.certificate | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener">
+        {{ membership.certificate_label | default: "View Certificate" }}
+      </a>
+    {% endif %}
+    <a class="repo-card-link" href="{{ membership.url | relative_url }}">Open Details</a>
+  </div>
+</article>

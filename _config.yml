@@ -10,7 +10,7 @@ email: karanratra07@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Innovative E-Commerce Systems Architect and Technology Leader in Retail Technology | Technology Leader | Speaker | Mentor | E-Commerce Systems Architect
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Systems leadership, technical strategy, and durable execution across global-scale platforms.
 keywords: Innovative E-Commerce Systems Architect, Technology Leader, Judge, Speaker, Mentor, Retail Technology Leader  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -84,7 +84,7 @@ twitter_username: karanratra007 # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: karanratra07 
 telegram_username: # your Telegram user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: ZIFgSN8AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0009-0009-7601-2001 # your ORCID ID
@@ -180,6 +180,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  memberships:
+    output: true
+    permalink: /memberships/:path/
   projects:
     output: true
     permalink: /projects/:path/

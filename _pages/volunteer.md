@@ -3,77 +3,112 @@ layout: page
 permalink: /volunteering/
 title: Volunteering
 description: <strong>  Empowering Innovation Worldwide Through Mentoring, Judging, and Speaking. </strong>
+page_eyebrow: Community Leadership
 nav: true
 nav_order: 5
 ---
-<div style="text-align: center; margin-top: 2rem;">
-<p style="margin: 2rem auto 1rem; text-align: left;">
-Over the years, I’ve had the privilege of contributing to the global tech ecosystem through mentorship, judging, public speaking, and technical program leadership. As a mentor on platforms like <strong>ADPList</strong>, I offer one-on-one guidance to professionals and students navigating career transitions and engineering challenges. I actively serve as a judge for global competitions and awards, and as a <strong>Technical Program Committee (TPC)</strong> reviewer for prestigious conferences under <strong>IEEE</strong>, <strong>Springer</strong>, and other international research bodies — helping shape the future of innovation, one review at a time.
-</p>
-</div>
-
-<div style="margin-top: 3rem;"></div>
-<hr style="margin: 3rem auto; max-width: 700px; border: none; border-top: 1px solid #eee;" />
-
-<!-- ADPList Mentorship Section -->
-<div style="text-align: center; margin-top: 2rem;">
-  <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">ADPList Mentorship</h2>
-  <p style="text-align: left; margin-top: 2rem;">
-    Mentorship isn’t just guidance — it’s about unlocking someone’s potential. Through ADPList, I aim to empower mentees with insights, career direction, and the confidence to succeed in tech and beyond.
+<section class="featured-section volunteering-intro">
+  <div class="section-heading">
+    <p class="section-kicker">Mentoring, judging, and speaking</p>
+    <h2>Contributing to the global technology community beyond day-to-day engineering leadership</h2>
+  </div>
+  <p>
+    Over the years, I’ve had the privilege of contributing to the global tech ecosystem through mentorship, judging, public speaking, and technical program leadership.
+    As a mentor on platforms like <strong>ADPList</strong>, I offer one-on-one guidance to professionals and students navigating career transitions and engineering challenges.
+    I actively serve as a judge for global competitions and awards, and as a <strong>Technical Program Committee (TPC)</strong> reviewer for prestigious conferences under
+    <strong>IEEE</strong>, <strong>Springer</strong>, and other international research bodies.
   </p>
-</div>
+</section>
 
-<div style="margin: 2rem auto; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.1); max-width: 750px;">
-  <iframe
-    src="https://adplist.org/widgets/single-session?src=karan-kumar-ratra&amp;session=42837-mentorship-session"
-    width="100%"
-    height="500"
-    frameborder="0"
-    scrolling="no"
-    style="border: none;"
-  ></iframe>
-</div>
+<section class="featured-section page-intro-panel">
+  <div class="section-heading">
+    <p class="section-kicker">Community footprint</p>
+    <h2>Extending technical leadership through mentorship, judging, peer review, and ecosystem stewardship</h2>
+  </div>
+  <div class="executive-signal-grid">
+    <article>
+      <h3>Mentorship</h3>
+      <p>Helping engineers and aspiring leaders grow in systems thinking, confidence, and practical career judgment.</p>
+    </article>
+    <article>
+      <h3>Judging and review</h3>
+      <p>Evaluating innovation through a lens of technical rigor, clarity of execution, scalability, and real-world impact.</p>
+    </article>
+    <article>
+      <h3>Global contribution</h3>
+      <p>Supporting a wider community of builders, researchers, and students through service, feedback, and thought leadership.</p>
+    </article>
+  </div>
+</section>
 
-<div style="text-align: center; margin-top: 3rem; margin-bottom: 1rem;">
-  <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">What Mentees Are Saying</h3>
-</div>
+<section class="featured-section volunteering-showcase">
+  <div class="section-heading">
+    <p class="section-kicker">Mentorship</p>
+    <h2>ADPList sessions and mentee feedback</h2>
+  </div>
+  <p class="volunteering-copy">
+    Mentorship isn’t just guidance. It is about helping people grow in confidence, systems thinking, and long-term career judgment.
+    Through ADPList, I focus on unlocking clarity for engineers and leaders navigating growth, transitions, and technical challenges.
+  </p>
 
-<div style="margin: 0 auto 3rem auto; padding: 16px; height: 500px; box-shadow: 0 4px 14px rgba(0,0,0,0.1); border-radius: 16px; overflow: hidden; width: 100%; max-width: 750px;">
-  <iframe
-    src="https://adplist.org/widgets/reviews?src=karan-kumar-ratra"
-    title="All Reviews"
-    width="100%"
-    height="500"
-    loading="lazy"
-    style="border: 0px;"
-  ></iframe>
-</div>
+  <div class="volunteering-embed">
+    <iframe
+      src="https://adplist.org/widgets/single-session?src=karan-kumar-ratra&amp;session=42837-mentorship-session"
+      width="100%"
+      height="500"
+      frameborder="0"
+      scrolling="no"
+      loading="lazy"
+    ></iframe>
+  </div>
 
+  <div class="volunteering-subheading">
+    <h3>What Mentees Are Saying</h3>
+  </div>
 
-<!-- <section style="padding: 1rem; width: 100%; max-width: 380px; min-height: 350px;"><img alt="Impact swag image" class="" src="https://adplist-users-production.s3.us-east-1.amazonaws.com/7f06af6015891aca2b4ca3b646ee1ae6/swags/2296d865-e66b-5a90-9d3f-bfe96a6a2101.webp" height="100%" width="100%" style="background-color: rgb(225, 49, 108); border-radius: 14px;"></section> -->
+  <div class="volunteering-embed">
+    <iframe
+      src="https://adplist.org/widgets/reviews?src=karan-kumar-ratra"
+      title="All Reviews"
+      width="100%"
+      height="500"
+      loading="lazy"
+    ></iframe>
+  </div>
+</section>
 
-<div style="margin-top: 3rem;"></div>
-<hr style="margin: 3rem auto; max-width: 700px; border: none; border-top: 1px solid #eee;" />
+<section class="featured-section">
+  <div class="section-heading">
+    <p class="section-kicker">Global contribution</p>
+    <h2>Selected volunteering and community leadership work</h2>
+  </div>
 
-<div style="text-align: center; margin-top: 2rem;">
-  <h2 style="font-size: 2rem; margin-bottom: 0.5rem;"> My Volunteering Work </h2>
-</div>
-
-<div class="volunteering-cards">
+<div class="repositories repo-grid repo-grid--volunteering">
 
   {% for item in site.data.volunteering %}
-  <div class="vol-card">
-    <div class="vol-logo">
-      <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }}">
+  <article class="card repo-card vol-card">
+    <div class="repo-card-top">
+      <div class="vol-logo membership-card-media">
+        <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }}">
+      </div>
+      <div class="repo-card-meta vol-details">
+        <p class="impact-label">Community Leadership</p>
+        <h3>{{ item.title }}</h3>
+        <p class="vol-org"><strong>{{ item.organization }}</strong> ・ {{ item.year }}</p>
+      </div>
     </div>
-    <div class="vol-details">
-      <h3><strong>{{ item.title }}</strong></h3>
-      <p class="vol-org"><strong>{{ item.organization }}</strong> ・ {{ item.year }}</p>
-      <p class="vol-desc">{{ item.description }}</p>
 
-      <a href="#" class="more-details-link" data-modal="modal-{{ forloop.index }}">More details..</a>
+    <div class="repo-card-body">
+      <div class="repo-card-text vol-desc">{{ item.description }}</div>
     </div>
-  </div>
+
+    <div class="repo-card-actions">
+      <a href="#" class="repo-card-link more-details-link" data-modal="modal-{{ forloop.index }}">More details</a>
+      {% if item.download_link %}
+        <a href="{{ item.download_link | relative_url }}" target="_blank" rel="noopener" class="repo-card-link">Certificate</a>
+      {% endif %}
+    </div>
+  </article>
 
   <!-- Modal -->
   <!-- Modal -->
@@ -119,3 +154,4 @@ Over the years, I’ve had the privilege of contributing to the global tech ecos
 
   {% endfor %}
 </div>
+</section>

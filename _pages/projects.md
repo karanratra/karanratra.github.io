@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Memberships
-permalink: /projects/
-description: <b> Affiliations with leading global engineering and research societies. </b>
-nav: true
-nav_order: 2
+title: Impact
+permalink: /impact/
+description: <b>Selected leadership, architecture, and community impact across engineering, research, and industry.</b>
+nav: false
 display_categories: [Memberships]
 horizontal: false
 ---

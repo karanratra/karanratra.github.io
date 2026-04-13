@@ -4,3 +4,19 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"IEEE Xplore":
+  url: https://ieeexplore.ieee.org/
+  color: "#dce8f6"
+
+"IJCTT":
+  url: https://www.ijcttjournal.org/
+  color: "#e7efe9"
+
+"IJGIS":
+  url: https://ijgis.pubpub.org/
+  color: "#ece6f4"
+
+"IJRASET":
+  url: https://www.ijraset.com/
+  color: "#f4e9df"
