@@ -1,7 +1,5 @@
----
-permalink: /robots.txt
----
 User-agent: *
-Disallow:
+Disallow: /_pages/cv-redirect.md
+Allow: /
 
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml

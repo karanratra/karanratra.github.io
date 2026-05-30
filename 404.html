@@ -1,9 +1,16 @@
 ---
 layout: page
 permalink: /404.html
-title: "Page not found"
-description: "Looks like there has been a mistake. Nothing exists here."
-redirect: true
+nav: false
+sitemap: false
 ---
 
-<p>You will be redirected to the main page within 3 seconds. If not redirected, please go back to the <a href="{{ site.baseurl }}/">home page</a>.</p>
+<section class="featured-section" style="text-align:center; padding: 4rem 2rem;">
+  <h1 style="font-size: 6rem; font-weight: 800; margin: 0; color: var(--global-theme-color); line-height: 1;">404</h1>
+  <p style="font-size: 1.3rem; color: var(--global-text-color-light); margin: 1rem 0 2rem;">Nothing to see here — yet.</p>
+  <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+    <a href="/" style="padding: 0.6rem 1.5rem; border-radius: 999px; background: var(--global-theme-color); color: #fff; text-decoration: none; font-weight: 600;">Go Home</a>
+    <a href="/publications/" style="padding: 0.6rem 1.5rem; border-radius: 999px; border: 1.5px solid var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; font-weight: 600;">Publications</a>
+    <a href="/repositories/" style="padding: 0.6rem 1.5rem; border-radius: 999px; border: 1.5px solid var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; font-weight: 600;">Open Source</a>
+  </div>
+</section>

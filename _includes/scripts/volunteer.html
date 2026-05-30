@@ -5,24 +5,49 @@
 
 
 <script>
+    const closeVolunteeringModal = (modal) => {
+        if (!modal) return;
+
+        modal.classList.remove("is-open");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("modal-open");
+    };
+
     document.querySelectorAll(".more-details-link").forEach(link => {
         link.addEventListener("click", function (e) {
             e.preventDefault();
             const modal = document.getElementById(this.dataset.modal);
-            if (modal) modal.style.display = "block";
+            if (!modal) return;
+
+            document.body.appendChild(modal);
+            modal.classList.add("is-open");
+            modal.setAttribute("aria-hidden", "false");
+            document.body.classList.add("modal-open");
+
+            const modalContent = modal.querySelector(".modal-content");
+            if (modalContent) modalContent.scrollTop = 0;
+
+            const closeButton = modal.querySelector(".close-button");
+            if (closeButton) closeButton.focus({ preventScroll: true });
         });
     });
 
     document.querySelectorAll(".close-button").forEach(btn => {
         btn.addEventListener("click", function () {
             const modal = document.getElementById(this.dataset.modal);
-            if (modal) modal.style.display = "none";
+            closeVolunteeringModal(modal);
         });
     });
 
     window.addEventListener("click", function (e) {
         if (e.target.classList.contains("modal")) {
-            e.target.style.display = "none";
+            closeVolunteeringModal(e.target);
         }
+    });
+
+    window.addEventListener("keydown", function (e) {
+        if (e.key !== "Escape") return;
+
+        closeVolunteeringModal(document.querySelector(".modal.is-open"));
     });
 </script>

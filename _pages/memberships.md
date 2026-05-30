@@ -5,7 +5,7 @@ permalink: /memberships/
 description: "<b>Affiliations with leading global engineering and research societies.</b>"
 page_eyebrow: Professional Recognition
 nav: true
-nav_order: 2
+nav_order: 5
 ---
 
 <section class="featured-section page-intro-panel">

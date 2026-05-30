@@ -5,7 +5,7 @@ title: Volunteering
 description: <strong>  Empowering Innovation Worldwide Through Mentoring, Judging, and Speaking. </strong>
 page_eyebrow: Community Leadership
 nav: true
-nav_order: 5
+nav_order: 2
 ---
 <section class="featured-section volunteering-intro">
   <div class="section-heading">
@@ -77,7 +77,7 @@ nav_order: 5
   </div>
 </section>
 
-<section class="featured-section">
+<section class="featured-section volunteering-list">
   <div class="section-heading">
     <p class="section-kicker">Global contribution</p>
     <h2>Selected volunteering and community leadership work</h2>
@@ -112,9 +112,9 @@ nav_order: 5
 
   <!-- Modal -->
   <!-- Modal -->
-<div class="modal" id="modal-{{ forloop.index }}">
+<div class="modal" id="modal-{{ forloop.index }}" aria-hidden="true">
   <div class="modal-content">
-    <span class="close-button" data-modal="modal-{{ forloop.index }}">&times;</span>
+    <button type="button" class="close-button" data-modal="modal-{{ forloop.index }}" aria-label="Close details">&times;</button>
     
     <div class="modal-header">
       {% if item.modal_image %}

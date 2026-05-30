@@ -1,6 +1,41 @@
     <!-- Metadata, OpenGraph and Schema.org -->
     {% include metadata.html %}
 
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Karan Kumar Ratra",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "jobTitle": "Senior Engineering Leader at Walmart Global Tech",
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Walmart Global Tech"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Michigan State University"
+        }
+      ],
+      "sameAs": [
+        "https://karanratra.com",
+        "https://karanratra07@gmail.com",
+        "https://github.com/karanratra",
+        "https://www.linkedin.com/in/karanratra07",
+        "https://orcid.org/0009-0009-7601-2001"
+      ],
+      "knowsAbout": ["Distributed Systems", "Cloud-Native Architecture", "Engineering Leadership", "Event-Driven Systems", "AI Automation"],
+      "knowsLanguage": [
+        {"@type": "Language", "name": "English"},
+        {"@type": "Language", "name": "Hindi"}
+      ]
+    }
+    </script>
+
     <!-- Bootstrap & MDB -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@{{ site.bootstrap.version }}/dist/css/bootstrap.min.css" rel="stylesheet" integrity="{{ site.bootstrap.integrity.css }}" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
