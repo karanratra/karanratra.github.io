@@ -1,4 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: /_pages/cv-redirect.md
+Allow: /
 
-Sitemap: https://karanratra.com/sitemap.xml
+Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
