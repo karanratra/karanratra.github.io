@@ -47,7 +47,7 @@ social: true  # includes social icons at the bottom of the page
 
 <section class="hero-metrics">
   <div class="metric-card">
-    <span class="metric-value">16+</span>
+    <span class="metric-value">17+</span>
     <span class="metric-label">Years across retail, fintech, and telecom</span>
   </div>
   <div class="metric-card">

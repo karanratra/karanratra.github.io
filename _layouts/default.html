@@ -11,6 +11,9 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %} layout-{{ page.layout | default: 'default' }}">
+    <div class="site-3d-background" aria-hidden="true">
+      <canvas id="retailNetworkBackground"></canvas>
+    </div>
 
     <!-- Header -->
     {%- include header.html %}
