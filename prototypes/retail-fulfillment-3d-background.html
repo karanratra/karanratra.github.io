@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karan Ratra - Retail Fulfillment 3D Background Concept</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --panel: rgba(255, 255, 255, 0.78);
+      --panel-strong: rgba(255, 255, 255, 0.92);
+      --text: #17202f;
+      --muted: #5f6d7e;
+      --line: rgba(54, 74, 99, 0.18);
+      --accent: #267b8c;
+      --accent-2: #355f93;
+      --accent-3: #8b6b34;
+      --shadow: rgba(25, 37, 54, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100%;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 18% 14%, rgba(38, 123, 140, 0.16), transparent 28rem),
+        radial-gradient(circle at 85% 18%, rgba(53, 95, 147, 0.12), transparent 24rem),
+        linear-gradient(180deg, #f7f9fc 0%, #edf2f7 100%);
+      overflow-x: hidden;
+    }
+
+    .page {
+      position: relative;
+      min-height: 100vh;
+      isolation: isolate;
+    }
+
+    .network-stage {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      overflow: hidden;
+    }
+
+    #retailNetwork {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .background-wash {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(246, 248, 251, 0.76) 0%, rgba(246, 248, 251, 0.48) 44%, rgba(246, 248, 251, 0.24) 100%),
+        linear-gradient(180deg, rgba(246, 248, 251, 0.28), rgba(246, 248, 251, 0.66));
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 24px 0;
+    }
+
+    .brand {
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .nav {
+      display: flex;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(260px, 0.64fr);
+      gap: 44px;
+      align-items: center;
+      width: min(1120px, calc(100% - 40px));
+      min-height: calc(100vh - 86px);
+      margin: 0 auto;
+      padding: 36px 0 74px;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--accent);
+      font-size: 0.83rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 34px;
+      height: 2px;
+      content: "";
+      background: var(--accent);
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2.8rem, 7vw, 6.8rem);
+      line-height: 0.92;
+      letter-spacing: 0;
+      color: #121b29;
+    }
+
+    .subtitle {
+      max-width: 680px;
+      margin: 26px 0 0;
+      color: #3d4d60;
+      font-size: clamp(1.06rem, 1.4vw, 1.24rem);
+      line-height: 1.68;
+    }
+
+    .proof-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .proof-strip span {
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.64);
+      color: #34465a;
+      font-size: 0.86rem;
+      font-weight: 650;
+      box-shadow: 0 14px 32px rgba(28, 41, 59, 0.06);
+      backdrop-filter: blur(10px);
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 32px;
+      max-width: 620px;
+    }
+
+    .metric {
+      min-height: 112px;
+      padding: 18px;
+      border: 1px solid rgba(54, 74, 99, 0.14);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 18px 48px var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .metric strong {
+      display: block;
+      color: #17202f;
+      font-size: 1.65rem;
+      line-height: 1;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.42;
+    }
+
+    .system-panel {
+      position: relative;
+      min-height: 530px;
+      padding: 20px;
+      border: 1px solid rgba(54, 74, 99, 0.14);
+      border-radius: 8px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.58)),
+        repeating-linear-gradient(90deg, rgba(52, 74, 99, 0.05) 0 1px, transparent 1px 34px),
+        repeating-linear-gradient(0deg, rgba(52, 74, 99, 0.05) 0 1px, transparent 1px 34px);
+      box-shadow: 0 30px 80px rgba(22, 31, 45, 0.16);
+      overflow: hidden;
+      backdrop-filter: blur(18px);
+    }
+
+    .system-panel::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background:
+        radial-gradient(circle at 52% 42%, rgba(38, 123, 140, 0.16), transparent 13rem),
+        radial-gradient(circle at 68% 68%, rgba(139, 107, 52, 0.13), transparent 12rem);
+      pointer-events: none;
+    }
+
+    .panel-title {
+      position: relative;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .service-map {
+      position: relative;
+      height: 450px;
+      margin-top: 16px;
+    }
+
+    .service {
+      position: absolute;
+      width: 132px;
+      padding: 12px;
+      border: 1px solid rgba(53, 95, 147, 0.24);
+      border-radius: 8px;
+      background: var(--panel-strong);
+      box-shadow: 0 18px 46px rgba(28, 41, 59, 0.12);
+    }
+
+    .service::before {
+      display: block;
+      width: 12px;
+      height: 12px;
+      margin-bottom: 9px;
+      border-radius: 50%;
+      content: "";
+      background: var(--accent);
+      box-shadow: 0 0 0 8px rgba(38, 123, 140, 0.12);
+    }
+
+    .service b {
+      display: block;
+      font-size: 0.82rem;
+    }
+
+    .service span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 0.72rem;
+      line-height: 1.32;
+    }
+
+    .service:nth-child(1) { left: 6%; top: 10%; }
+    .service:nth-child(2) { right: 7%; top: 8%; }
+    .service:nth-child(3) { left: 35%; top: 37%; transform: scale(1.12); }
+    .service:nth-child(3)::before { background: var(--accent-3); box-shadow: 0 0 0 8px rgba(139, 107, 52, 0.13); }
+    .service:nth-child(4) { left: 9%; bottom: 11%; }
+    .service:nth-child(5) { right: 9%; bottom: 12%; }
+
+    .flow-label {
+      position: absolute;
+      right: 18px;
+      bottom: 18px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d121a;
+        --panel: rgba(18, 25, 35, 0.76);
+        --panel-strong: rgba(18, 25, 35, 0.9);
+        --text: #e8edf5;
+        --muted: #a3afc0;
+        --line: rgba(169, 189, 215, 0.16);
+        --accent: #7cc3ce;
+        --accent-2: #8fb4e4;
+        --accent-3: #d1aa62;
+        --shadow: rgba(0, 0, 0, 0.32);
+      }
+
+      body {
+        background:
+          radial-gradient(circle at 18% 14%, rgba(124, 195, 206, 0.16), transparent 28rem),
+          radial-gradient(circle at 85% 18%, rgba(143, 180, 228, 0.12), transparent 24rem),
+          linear-gradient(180deg, #0d121a 0%, #111926 100%);
+      }
+
+      .background-wash {
+        background:
+          linear-gradient(90deg, rgba(13, 18, 26, 0.74) 0%, rgba(13, 18, 26, 0.48) 44%, rgba(13, 18, 26, 0.22) 100%),
+          linear-gradient(180deg, rgba(13, 18, 26, 0.24), rgba(13, 18, 26, 0.66));
+      }
+
+      h1,
+      .metric strong {
+        color: #f1f5fa;
+      }
+
+      .subtitle {
+        color: #c4cedb;
+      }
+
+      .proof-strip span,
+      .system-panel,
+      .metric,
+      .service {
+        border-color: rgba(169, 189, 215, 0.16);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 18px;
+      }
+
+      .system-panel {
+        min-height: 440px;
+      }
+
+      .service-map {
+        height: 360px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .nav {
+        gap: 14px;
+        font-size: 0.82rem;
+      }
+
+      .metrics {
+        grid-template-columns: 1fr;
+      }
+
+      .system-panel {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #retailNetwork {
+        opacity: 0.55;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="network-stage" aria-hidden="true">
+      <canvas id="retailNetwork"></canvas>
+    </div>
+    <div class="background-wash" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="brand">Karan Kumar Ratra</div>
+      <nav class="nav" aria-label="Preview navigation">
+        <span>Research</span>
+        <span>Writing</span>
+        <span>Open Source</span>
+        <span>Community</span>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <section class="hero-copy">
+        <p class="eyebrow">Executive Profile</p>
+        <h1>Retail systems at enterprise scale.</h1>
+        <p class="subtitle">
+          E-Commerce System Architect and Retail Technology Leader building event-driven
+          platforms for fulfillment, customer remediation, and digital transformation.
+        </p>
+        <div class="proof-strip" aria-label="Professional focus areas">
+          <span>Walmart Global Tech</span>
+          <span>Fulfillment orchestration</span>
+          <span>Event-driven platforms</span>
+          <span>Digital transformation</span>
+        </div>
+        <div class="metrics">
+          <article class="metric">
+            <strong>100M+</strong>
+            <span>Daily events across high-scale retail fulfillment systems</span>
+          </article>
+          <article class="metric">
+            <strong>25%</strong>
+            <span>Platform efficiency improvement through reusable architecture</span>
+          </article>
+        </div>
+      </section>
+
+      <aside class="system-panel" aria-label="Retail fulfillment architecture preview">
+        <p class="panel-title">Live Architecture Signal</p>
+        <div class="service-map">
+          <div class="service"><b>Customer</b><span>Orders and experience signals</span></div>
+          <div class="service"><b>Seller</b><span>Marketplace inventory channels</span></div>
+          <div class="service"><b>Fulfillment Core</b><span>Event orchestration and routing</span></div>
+          <div class="service"><b>Store</b><span>Omnichannel retail execution</span></div>
+          <div class="service"><b>Remediation</b><span>Resilience and customer recovery</span></div>
+        </div>
+        <p class="flow-label">Animated background: order flow, service mesh, fulfillment routes</p>
+      </aside>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var canvas = document.getElementById("retailNetwork");
+      var context = canvas.getContext("2d");
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var width = 0;
+      var height = 0;
+      var dpr = Math.min(window.devicePixelRatio || 1, 2);
+      var nodes = [];
+      var routes = [];
+      var pointer = { x: 0, y: 0 };
+
+      var nodeSpecs = [
+        ["Customer", -430, -120, 95],
+        ["Store", -270, 125, 35],
+        ["Inventory", -35, -185, 55],
+        ["Fulfillment", 95, 0, 130],
+        ["Seller", 410, -135, 70],
+        ["Payments", 455, 120, 20],
+        ["Remediation", -35, 215, 85],
+        ["Carrier", 300, 255, 45],
+        ["Analytics", -465, 210, 10],
+        ["API", -145, -5, 115],
+        ["Partner", 210, -245, 60],
+        ["Forecasting", -310, -260, 42]
+      ];
+
+      var routePairs = [
+        [0, 9], [9, 3], [2, 3], [4, 2], [3, 1], [3, 6],
+        [3, 7], [0, 5], [6, 0], [8, 3], [4, 9], [1, 7],
+        [10, 2], [11, 8], [11, 3], [10, 4]
+      ];
+
+      function resize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+        context.setTransform(dpr, 0, 0, dpr, 0, 0);
+        buildScene();
+      }
+
+      function buildScene() {
+        var scale = Math.max(0.82, Math.min(width / 1180, height / 760));
+        var centerX = width * (width < 900 ? 0.5 : 0.52);
+        var centerY = height * 0.5;
+
+        nodes = nodeSpecs.map(function (spec, index) {
+          return {
+            label: spec[0],
+            x: centerX + spec[1] * scale,
+            y: centerY + spec[2] * scale,
+            z: spec[3],
+            radius: (index === 3 ? 9 : 6) * scale,
+            phase: index * 0.74
+          };
+        });
+
+        routes = routePairs.map(function (pair, index) {
+          return {
+            from: nodes[pair[0]],
+            to: nodes[pair[1]],
+            offset: index / routePairs.length
+          };
+        });
+      }
+
+      function project(node, time) {
+        var depth = 1 + node.z / 420;
+        var driftX = Math.cos(time * 0.00032 + node.phase) * 16;
+        var driftY = Math.sin(time * 0.00028 + node.phase) * 12;
+        var parallaxX = pointer.x * (node.z / 420) * 18;
+        var parallaxY = pointer.y * (node.z / 420) * 12;
+        return {
+          x: node.x + driftX + parallaxX,
+          y: node.y + driftY + parallaxY,
+          depth: depth,
+          radius: node.radius * depth
+        };
+      }
+
+      function drawGrid(time) {
+        var spacing = 54;
+        var horizon = height * 0.58;
+        context.save();
+        context.translate(width * 0.5, horizon);
+        context.rotate(-0.12);
+        context.scale(1.48, 0.38);
+        context.lineWidth = 1;
+        context.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue("--line");
+
+        for (var x = -width; x <= width; x += spacing) {
+          context.beginPath();
+          context.moveTo(x + Math.sin(time * 0.0002 + x) * 6, -height);
+          context.lineTo(x, height);
+          context.stroke();
+        }
+
+        for (var y = -height; y <= height; y += spacing) {
+          context.beginPath();
+          context.moveTo(-width, y);
+          context.lineTo(width, y + Math.cos(time * 0.0002 + y) * 6);
+          context.stroke();
+        }
+
+        context.restore();
+      }
+
+      function drawRoute(route, time) {
+        var a = project(route.from, time);
+        var b = project(route.to, time);
+        var pulse = (time * 0.00018 + route.offset) % 1;
+        var px = a.x + (b.x - a.x) * pulse;
+        var py = a.y + (b.y - a.y) * pulse;
+        var accent = getComputedStyle(document.documentElement).getPropertyValue("--accent");
+        var accentTwo = getComputedStyle(document.documentElement).getPropertyValue("--accent-2");
+
+        context.beginPath();
+        context.moveTo(a.x, a.y);
+        context.lineTo(b.x, b.y);
+        context.strokeStyle = "rgba(73, 96, 124, 0.26)";
+        context.lineWidth = Math.max(1, (a.depth + b.depth) * 0.65);
+        context.stroke();
+
+        var gradient = context.createLinearGradient(a.x, a.y, b.x, b.y);
+        gradient.addColorStop(0, "rgba(38, 123, 140, 0)");
+        gradient.addColorStop(Math.max(0, pulse - 0.16), "rgba(38, 123, 140, 0)");
+        gradient.addColorStop(pulse, accent.trim() || "#267b8c");
+        gradient.addColorStop(Math.min(1, pulse + 0.16), "rgba(53, 95, 147, 0)");
+        gradient.addColorStop(1, "rgba(53, 95, 147, 0)");
+
+        context.beginPath();
+        context.moveTo(a.x, a.y);
+        context.lineTo(b.x, b.y);
+        context.strokeStyle = gradient;
+        context.lineWidth = 2.2;
+        context.stroke();
+
+        context.beginPath();
+        context.arc(px, py, 3.2 * ((a.depth + b.depth) / 2), 0, Math.PI * 2);
+        context.fillStyle = accentTwo.trim() || "#355f93";
+        context.shadowBlur = 16;
+        context.shadowColor = accentTwo.trim() || "#355f93";
+        context.fill();
+        context.shadowBlur = 0;
+      }
+
+      function drawNode(node, time) {
+        var p = project(node, time);
+        var accent = getComputedStyle(document.documentElement).getPropertyValue("--accent");
+
+        context.beginPath();
+        context.arc(p.x, p.y, p.radius * 2.7, 0, Math.PI * 2);
+        context.fillStyle = "rgba(38, 123, 140, 0.08)";
+        context.fill();
+
+        context.beginPath();
+        context.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        context.fillStyle = accent.trim() || "#267b8c";
+        context.shadowBlur = 18;
+        context.shadowColor = accent.trim() || "#267b8c";
+        context.fill();
+        context.shadowBlur = 0;
+
+        if (width > 760) {
+          context.font = "600 11px Inter, system-ui, sans-serif";
+          context.fillStyle = "rgba(48, 64, 82, 0.82)";
+          context.fillText(node.label, p.x + p.radius + 8, p.y + 4);
+        }
+      }
+
+      function draw(time) {
+        context.clearRect(0, 0, width, height);
+        drawGrid(time);
+        routes.forEach(function (route) { drawRoute(route, time); });
+        nodes
+          .slice()
+          .sort(function (a, b) { return a.z - b.z; })
+          .forEach(function (node) { drawNode(node, time); });
+
+        if (!reduceMotion) {
+          window.requestAnimationFrame(draw);
+        }
+      }
+
+      window.addEventListener("resize", resize);
+      window.addEventListener("pointermove", function (event) {
+        pointer.x = (event.clientX / width - 0.5) * 2;
+        pointer.y = (event.clientY / height - 0.5) * 2;
+      });
+
+      resize();
+      window.requestAnimationFrame(draw);
+    }());
+  </script>
+</body>
+</html>
