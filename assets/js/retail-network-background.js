@@ -25,7 +25,7 @@
     ["Forecasting", "supply", -698, 252, 92, 8, false],
     ["Replenishment", "supply", -804, 366, 72, 8, false],
     ["Customers", "channel", -200, -120, 108, 8, false],
-    ["Sellers", "channel", 690, 50, 86, 8, false],
+    ["Sellers", "channel", 600, 50, 86, 8, false],
     ["Marketplace Sellers", "channel", 560, -68, 112, 10, true],
     ["Local Marketplace Sellers", "channel", 790, 12, 82, 8, false],
     ["Drop Ship Vendors", "channel", 760, 120, 78, 8, false],
