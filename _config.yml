@@ -3,12 +3,14 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
+author_name: Karan Kumar Ratra
+seo_title: Karan Kumar Ratra | Engineering Leader in Distributed Systems
 first_name: Karan Kumar
 middle_name:
 last_name: Ratra
 email: karanratra07@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Innovative E-Commerce Systems Architect and Technology Leader in Retail Technology | Technology Leader | Speaker | Mentor | E-Commerce Systems Architect
+  Senior engineering leader at Walmart Global Tech specializing in distributed systems, enterprise fulfillment, event-driven architecture, and scalable retail platforms.
 footer_text: >
   Systems leadership, technical strategy, and durable execution across global-scale platforms.
 keywords: Innovative E-Commerce Systems Architect, Technology Leader, Judge, Speaker, Mentor, Retail Technology Leader  # add your own keywords or leave empty
@@ -74,6 +76,17 @@ serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
 og_image: "/assets/img/social/karan-ratra-social-card.png" # The site-wide Open Graph preview image
 twitter_image: "/assets/img/social/karan-ratra-social-card.png" # The site-wide Twitter preview image
+
+# Verified identity profiles used by the Person entity graph.
+same_as:
+  - https://github.com/karanratra
+  - https://www.linkedin.com/in/karanratra07
+  - https://scholar.google.com/citations?user=ZIFgSN8AAAAJ
+  - https://orcid.org/0009-0009-7601-2001
+  - https://medium.com/@karanratra07
+  - https://adplist.org/mentors/karan-kumar-ratra
+  - https://sessionize.com/karan-kumar-ratra/
+  - https://mentorcruise.com/mentor/karankumarratra/
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
@@ -220,6 +233,8 @@ exclude:
   - bin
   - Gemfile
   - Gemfile.lock
+  - graphify-out
+  - prototypes
   - vendor
 keep_files:
   - CNAME

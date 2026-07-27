@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Publications by categories in reversed chronological order.
+description: Research publications and technical writing by Karan Kumar Ratra across distributed systems, cloud platforms, AI, and modern engineering practice.
 page_eyebrow: Research and Writing
 publication_badges: true
 content_filters: true
