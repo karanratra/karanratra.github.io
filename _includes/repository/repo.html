@@ -6,13 +6,13 @@
   {% assign show_owner = true %}
 {% endif %}
 
-<article class="repo repo-card">
+<article class="repo repo-card{% if include.featured %} repo-card--featured{% endif %}" data-repository-item data-category="{{ include.category | default: 'platform' }}">
   <div class="repo-card-top">
     <div class="repo-card-icon" aria-hidden="true">
       <i class="fas fa-folder-open"></i>
     </div>
     <div class="repo-card-meta">
-      <p class="impact-label">Repository</p>
+      <p class="impact-label">{% if include.featured %}Flagship Repository{% else %}{{ include.category | capitalize }} Repository{% endif %}</p>
       <h3>{{ repo_url[1] | replace: "-", " " }}</h3>
       <p class="repo-card-owner">{{ repo_url[0] }}</p>
     </div>

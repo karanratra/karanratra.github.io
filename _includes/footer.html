@@ -6,6 +6,8 @@
         <span>&copy; {{ site.time | date: '%Y' }}</span>
         <span class="footer-sep">·</span>
         <span>{{ site.footer_text }}</span>
+        <span class="footer-sep">·</span>
+        <a href="{{ '/connect/' | relative_url }}">Connect</a>
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}
@@ -22,6 +24,8 @@
         <span>&copy; {{ site.time | date: '%Y' }}</span>
         <span class="footer-sep">·</span>
         <span>{{ site.footer_text }}</span>
+        <span class="footer-sep">·</span>
+        <a href="{{ '/connect/' | relative_url }}">Connect</a>
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}

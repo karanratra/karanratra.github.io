@@ -11,6 +11,21 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %} layout-{{ page.layout | default: 'default' }}">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <script>try{if(sessionStorage.getItem('portfolio-transition'))document.documentElement.classList.add('page-transition-arrival')}catch(e){}</script>
+    <div class="page-transition-overlay" aria-hidden="true">
+      <div class="fulfillment-pulse">
+        <span class="fulfillment-pulse__orbit">
+          <i class="fas fa-cloud" title="Cloud platform"></i>
+          <i class="fas fa-stream" title="Event streams"></i>
+          <i class="fas fa-warehouse" title="Fulfillment"></i>
+          <i class="fas fa-globe-americas" title="Cross-border delivery"></i>
+        </span>
+        <span class="fulfillment-pulse__core"><i class="fas fa-project-diagram"></i></span>
+        <span class="fulfillment-pulse__label" data-transition-label>Opening enterprise platform view</span>
+        <span class="fulfillment-pulse__expertise">Distributed Systems · Multi-Tenancy · Fulfillment</span>
+      </div>
+    </div>
     <div class="site-3d-background" aria-hidden="true">
       <canvas id="retailNetworkBackground"></canvas>
     </div>
@@ -19,7 +34,7 @@
     {%- include header.html %}
 
     <!-- Content -->
-    <main class="site-shell">
+    <main class="site-shell" id="main-content" tabindex="-1">
       <div class="container page-shell mt-5">
         {{ content }}
       </div>

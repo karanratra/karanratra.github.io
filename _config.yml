@@ -72,8 +72,8 @@ max_width: 800px
 # Display links to the page with a preview object on social media.
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: "/assets/img/prof_pic.jpg" # The site-wide (default for all links) Open Graph preview image
-twitter_image: "/assets/img/prof_pic.jpg" # The site-wide (default for all links) Twitter preview image
+og_image: "/assets/img/social/karan-ratra-social-card.png" # The site-wide Open Graph preview image
+twitter_image: "/assets/img/social/karan-ratra-social-card.png" # The site-wide Twitter preview image
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
@@ -254,8 +254,12 @@ defaults:
 
 jekyll-minifier:
   exclude: ['robots.txt']
-  uglifier_args:
-    harmony: true
+
+# Keep builds readable until the theme's cross-file Sass variables can be
+# migrated atomically from @import to the module system.
+sass:
+  silence_deprecations:
+    - import
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
@@ -272,7 +276,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['engineering-leadership', 'microservices', 'cloud-computing', 'event-driven-architecture', 'distributed-systems', 'kafka', 'system-design', 'digital-transformation', 'team-building', 'walmart-global-tech'] # this tags will be dispalyed on the front page of your blog
+display_tags: ['engineering', 'microservices', 'cloud-computing', 'event-driven-architecture', 'distributed-systems', 'ai', 'architecture', 'digital-transformation', 'scalability', 'software-testing']
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -308,7 +312,7 @@ badges: # Display different badges for your publications
   dimensions_badge: true # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, topic, content_type]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit: 3  # leave blank to always show all authors

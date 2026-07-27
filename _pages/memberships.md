@@ -30,8 +30,18 @@ nav_order: 5
 </section>
 
 <div class="projects membership-grid-shell">
-  <h2 class="category">Memberships</h2>
   {%- assign sorted_memberships = site.memberships | sort: "importance" -%}
+  <section class="membership-timeline" aria-labelledby="membership-timeline-title">
+    <div>
+      <p class="section-kicker">Credential directory</p>
+      <h2 id="membership-timeline-title">Memberships</h2>
+    </div>
+    <ol>
+      {%- for membership in sorted_memberships -%}
+        <li><a href="#membership-{{ membership.title | slugify }}"><span>{{ forloop.index }}</span>{{ membership.title }}</a></li>
+      {%- endfor -%}
+    </ol>
+  </section>
   <div class="repositories repo-grid repo-grid--memberships">
     {%- for membership in sorted_memberships -%}
       {% include membership_card.html %}

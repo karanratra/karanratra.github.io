@@ -59,6 +59,7 @@ nav_order: 2
       frameborder="0"
       scrolling="no"
       loading="lazy"
+      title="Book a mentorship session with Karan Kumar Ratra"
     ></iframe>
   </div>
 
@@ -83,16 +84,35 @@ nav_order: 2
     <h2>Selected volunteering and community leadership work</h2>
   </div>
 
+  <div class="content-filter" data-volunteering-filter aria-label="Filter community work">
+    <div class="content-filter__group" role="group" aria-label="Community contribution type">
+      <button type="button" class="filter-chip is-active" data-category="all" aria-pressed="true">All contributions</button>
+      <button type="button" class="filter-chip" data-category="judging" aria-pressed="false">Judging</button>
+      <button type="button" class="filter-chip" data-category="mentoring" aria-pressed="false">Mentoring</button>
+      <button type="button" class="filter-chip" data-category="review" aria-pressed="false">Research review</button>
+      <button type="button" class="filter-chip" data-category="speaking" aria-pressed="false">Speaking</button>
+    </div>
+    <p class="content-filter__status" data-filter-status aria-live="polite"></p>
+  </div>
+
 <div class="repositories repo-grid repo-grid--volunteering">
 
   {% for item in site.data.volunteering %}
-  <article class="card repo-card vol-card">
+  {% assign contribution_category = "speaking" %}
+  {% if item.title contains "Judge" %}
+    {% assign contribution_category = "judging" %}
+  {% elsif item.title contains "Mentor" or item.title contains "ADPList" %}
+    {% assign contribution_category = "mentoring" %}
+  {% elsif item.title contains "Reviewer" or item.title contains "TPC" or item.title contains "Committee" %}
+    {% assign contribution_category = "review" %}
+  {% endif %}
+  <article class="card repo-card vol-card" data-volunteering-item data-category="{{ contribution_category }}">
     <div class="repo-card-top">
       <div class="vol-logo membership-card-media">
-        <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }}">
+        <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }}" loading="lazy" decoding="async">
       </div>
       <div class="repo-card-meta vol-details">
-        <p class="impact-label">Community Leadership</p>
+        <p class="impact-label">{{ contribution_category | capitalize }}</p>
         <h3>{{ item.title }}</h3>
         <p class="vol-org"><strong>{{ item.organization }}</strong> ・ {{ item.year }}</p>
       </div>
@@ -103,7 +123,7 @@ nav_order: 2
     </div>
 
     <div class="repo-card-actions">
-      <a href="#" class="repo-card-link more-details-link" data-modal="modal-{{ forloop.index }}">More details</a>
+      <button type="button" class="repo-card-link more-details-link" data-modal="modal-{{ forloop.index }}">More details</button>
       {% if item.download_link %}
         <a href="{{ item.download_link | relative_url }}" target="_blank" rel="noopener" class="repo-card-link">Certificate</a>
       {% endif %}
@@ -112,19 +132,19 @@ nav_order: 2
 
   <!-- Modal -->
   <!-- Modal -->
-<div class="modal" id="modal-{{ forloop.index }}" aria-hidden="true">
+<div class="modal" id="modal-{{ forloop.index }}" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title-{{ forloop.index }}">
   <div class="modal-content">
     <button type="button" class="close-button" data-modal="modal-{{ forloop.index }}" aria-label="Close details">&times;</button>
     
     <div class="modal-header">
       {% if item.modal_image %}
-              <img src="{{ item.modal_image | relative_url }}" alt="{{ item.organization }} Image" class="modal-logo">
+              <img src="{{ item.modal_image | relative_url }}" alt="{{ item.organization }} Image" class="modal-logo" loading="lazy" decoding="async">
         {% elsif item.logo %}
-            <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }} Logo" class="modal-logo">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }} Logo" class="modal-logo" loading="lazy" decoding="async">
         {% endif %}
 
       <div class="modal-text">
-        <h2>{{ item.title }} – {{ item.organization }}</h2>
+        <h2 id="modal-title-{{ forloop.index }}">{{ item.title }} – {{ item.organization }}</h2>
         <p><strong>Year:</strong> {{ item.year }}</p>
       </div>
     </div>
@@ -132,18 +152,18 @@ nav_order: 2
     <p>{{ item.details }}</p>
 
     {% if item.download_link %}
-      <p><a href="{{ item.download_link | relative_url }}" target="_blank" class="vol-link">Download Certificate</a></p>
+      <p><a href="{{ item.download_link | relative_url }}" target="_blank" rel="noopener" class="vol-link">Download Certificate</a></p>
     {% endif %}
 
     {% if item.certificate %}
-      <img src="{{ item.certificate | relative_url }}" alt="Certificate" class="modal-cert-img">
+      <img src="{{ item.certificate | relative_url }}" alt="Certificate for {{ item.title }}" class="modal-cert-img" loading="lazy" decoding="async">
     {% endif %}
 
     {% if item.gallery %}
      <div class="modal-gallery">
             {% for image in item.gallery %}
                 <a href="{{ image | relative_url }}" data-lightbox="gallery-{{ forloop.parentloop.index }}" data-title="{{ item.title }}">
-                <img src="{{ image | relative_url }}" class="modal-gallery-img" alt="Gallery image {{ forloop.index }}">
+                <img src="{{ image | relative_url }}" class="modal-gallery-img" alt="{{ item.title }} gallery image {{ forloop.index }}" loading="lazy" decoding="async">
                 </a>
             {% endfor %}
         </div>
@@ -154,4 +174,5 @@ nav_order: 2
 
   {% endfor %}
 </div>
+<div class="filter-empty" data-filter-empty hidden>No community contributions match this category.</div>
 </section>

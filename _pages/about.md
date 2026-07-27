@@ -13,12 +13,13 @@ social: true  # includes social icons at the bottom of the page
 <section class="hero-intro">
   <div class="hero-intro__layout">
     <div class="hero-intro__content">
-      <p class="hero-kicker">Senior Engineering Leader at Walmart Global Tech | Turning complex distributed systems into scalable retail impact</p>
-      <!-- <h5>Building resilient, high-scale commerce platforms that turn engineering complexity into measurable business impact.</h5> -->
+      <p class="page-eyebrow hero-profile-eyebrow">Executive Profile</p>
+      <h1 class="hero-profile-title">Karan Kumar Ratra</h1>
+      <p class="hero-positioning">Senior Engineering Leader turning complex distributed systems into scalable retail impact</p>
+      <p class="hero-meta"><a href="https://tech.walmart.com/content/walmart-global-tech/en_us.html" target="_blank" rel="noopener noreferrer">Walmart Global Tech</a><span aria-hidden="true">·</span>Sunnyvale, California</p>
       <p class="hero-summary">
-      I lead globally distributed teams at Walmart Global Tech, architecting event-driven platforms that power <strong> fulfillment, customer remediation, and enterprise-scale retail operations </strong>. I drive the design of systems operating at massive scale, delivering resilient, high-performance platforms that directly impact customer experience and business outcomes.
+      I lead globally distributed teams architecting event-driven platforms for <strong>fulfillment, customer remediation, and enterprise-scale retail operations</strong>. My work turns complex systems into reusable, resilient platforms that improve efficiency, reliability, customer experience, and business outcomes.
       </p>
-      <p class="hero-summary" > I focus on building reusable platform architectures that enable scalable, resilient, and high-performance systems at global scale. My work emphasizes transforming complex distributed systems into production-grade platforms that drive measurable efficiency, reliability, and business impact. </p>
       <div class="hero-proof-strip">
         <span>Walmart Global Tech</span>
         <span>Platform architecture</span>
@@ -35,10 +36,11 @@ social: true  # includes social icons at the bottom of the page
         <a href="{{ '/repositories/' | relative_url }}">Open Source</a>
         <a href="{{ '/volunteering/' | relative_url }}">Community</a>
       </div>
+      <p class="hero-architecture-label"><span aria-hidden="true"></span>Enterprise Fulfillment Architecture</p>
     </div>
     <aside class="hero-portrait">
       <div class="hero-portrait__frame">
-        <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Karan Kumar Ratra portrait" class="hero-portrait__image">
+        <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Karan Kumar Ratra portrait" class="hero-portrait__image" loading="eager" decoding="async" fetchpriority="high">
         <!-- <div class="hero-portrait__caption">Driving Scalable Retail Innovation</div> -->
       </div>
     </aside>
@@ -46,20 +48,20 @@ social: true  # includes social icons at the bottom of the page
 </section>
 
 <section class="hero-metrics">
-  <div class="metric-card">
-    <span class="metric-value">17+</span>
+  <div class="metric-card" data-counter-card>
+    <span class="metric-value" data-count="17" data-suffix="+">17+</span>
     <span class="metric-label">Years across retail, fintech, and telecom</span>
   </div>
-  <div class="metric-card">
-    <span class="metric-value">100M+</span>
+  <div class="metric-card" data-counter-card>
+    <span class="metric-value" data-count="100" data-suffix="M+">100M+</span>
     <span class="metric-label">Daily messages orchestrated in fulfillment systems</span>
   </div>
-  <div class="metric-card">
-    <span class="metric-value">25%</span>
+  <div class="metric-card" data-counter-card>
+    <span class="metric-value" data-count="25" data-suffix="%">25%</span>
     <span class="metric-label">Platform efficiency improvement delivered at Walmart</span>
   </div>
-  <div class="metric-card">
-    <span class="metric-value">$10M</span>
+  <div class="metric-card" data-counter-card>
+    <span class="metric-value" data-count="10" data-prefix="$" data-suffix="M">$10M</span>
     <span class="metric-label">Potential regulatory exposure prevented at PayPal</span>
   </div>
 </section>
@@ -102,39 +104,37 @@ social: true  # includes social icons at the bottom of the page
     <h4>Representative systems and leadership outcomes across retail, fintech, and telecom</h4>
   </div>
   <div class="case-study-grid">
-    <article class="case-study-card case-study-card--featured">
-      <p class="impact-label">Retail Scale</p>
-      <h3>Walmart Fulfillment Management System</h3>
-      <p>Architected and institutionalized a unified, event-driven fulfillment orchestration platform powering omnichannel commerce at global scale, enabling seller-agnostic, channel-agnostic, and geography-agnostic execution.</p>
-      <ul class="case-study-points">
-        <li>Orchestrates 100M+ daily events across U.S., Canada, Mexico, and cross-border fulfillment networks</li>
-        <li>Enabled Fulfillment-as-a-Service (FaaS) and supports Walmart Fulfillment Services (WFS) for third-party sellers</li>
-        <li>Built event-driven microservices architecture with asynchronous orchestration and failure-resilient workflows</li>
-        <li>Reduced operational costs by 15% and improved fulfillment efficiency by 25%+</li>
-        <li>Established a reusable orchestration framework adopted across Walmart and subsidiary platforms (including Sam’s Club and international markets), enabling rapid onboarding of new fulfillment capabilities and business models</li>
-      </ul>
+    {% for item in site.data.impact %}
+    <article class="case-study-card {% if forloop.first %}case-study-card--featured{% endif %}">
+      <p class="impact-label">{{ item.label }}</p>
+      <h3>{{ item.title }}</h3>
+      <p>{{ item.architecture }}</p>
+      <ul class="case-study-points">{% for outcome in item.outcomes %}<li>{{ outcome }}</li>{% endfor %}</ul>
     </article>
-    <article class="case-study-card">
-      <p class="impact-label">Fintech Risk</p>
-      <h3>PayPal Compliance and Risk Platforms</h3>
-      <p>Built compliance APIs and frameworks that prevented a potential $10M regulatory fine and strengthened governance across global payment workflows.</p>
-    </article>
-    <article class="case-study-card">
-      <p class="impact-label">Telecom Platforms</p>
-      <h3>Credit Risk Systems At Global Scale</h3>
-      <p>Designed scalable credit risk engines deployed by Tier-1 and Tier-2 telecom operators across multiple regions.</p>
-    </article>
+    {% endfor %}
     <article class="case-study-card">
       <p class="impact-label">Team Development</p>
       <h3>Engineering culture and talent growth</h3>
       <p>Mentored engineers and managers, strengthened design review practices, and built durable execution habits across globally distributed teams.</p>
     </article>
-      <article class="case-study-card">
+    <article class="case-study-card">
       <p class="impact-label">GLOBAL INFLUENCE</p>
       <h3>Industry recognition and thought leadership</h3>
       <p>Recognized globally through Forbes Technology Council contributions, prestigious industry judging (Globee, Claro, BIG), and IEEE research leadership, influencing modern platform architecture and AI-driven systems.</p>
     </article>
+    <article class="case-study-card">
+      <p class="impact-label">Research &amp; Applied Innovation</p>
+      <h3>Translating enterprise experience into published research</h3>
+      <p>Research and industry writing across distributed systems, AI, cloud platforms, e-commerce, API architecture, and engineering practice.</p>
+      <ul class="case-study-points">
+        <li>18 research papers and industry articles</li>
+        <li>IEEE and international publication venues</li>
+        <li>Research grounded in production-scale engineering</li>
+      </ul>
+      <a class="case-study-link" href="{{ '/publications/' | relative_url }}">Explore publications →</a>
+    </article>
   </div>
+  <p class="section-action"><a href="{{ '/impact/' | relative_url }}">Explore the evidence behind these outcomes →</a></p>
 </section>
 
 <section class="featured-section credentials-band">

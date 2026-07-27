@@ -6,8 +6,12 @@ layout: default
 
           <header class="post-header">
             <p class="page-eyebrow">{{ page.page_eyebrow | default: "Leadership Resume" }}</p>
-            <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right resume-download"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+            <h1 class="post-title">{{ page.title }}</h1>
             <p class="post-description">{{ page.description }}</p>
+            <div class="resume-actions">
+              {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="resume-download"><i class="fas fa-file-pdf" aria-hidden="true"></i> Download PDF</a>{% endif %}
+              <button type="button" data-print-resume><i class="fas fa-print" aria-hidden="true"></i> Print resume</button>
+            </div>
           </header>
 
           <article>
@@ -27,9 +31,14 @@ layout: default
                 </div>
               </section>
             {% endif %}
+            <nav class="cv-section-nav" aria-label="Resume sections">
+              {% for entry in site.data.cv %}
+                <a href="#cv-{{ entry.title | slugify }}">{{ entry.title }}</a>
+              {% endfor %}
+            </nav>
             <div class="cv">
               {% for entry in site.data.cv %}
-                <section class="card mt-3 p-3 cv-section-card">
+                <section class="card mt-3 p-3 cv-section-card" id="cv-{{ entry.title | slugify }}">
                   <div class="cv-section-head">
                     <p class="section-kicker">Resume Section</p>
                     <h2 class="card-title font-weight-medium">{{ entry.title }}</h2>

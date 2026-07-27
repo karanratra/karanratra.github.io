@@ -1,53 +1,90 @@
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script> -->
-
 <!-- Lightbox2 JS -->
 <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 
-
 <script>
-    const closeVolunteeringModal = (modal) => {
-        if (!modal) return;
+  (function () {
+    "use strict";
 
-        modal.classList.remove("is-open");
-        modal.setAttribute("aria-hidden", "true");
-        document.body.classList.remove("modal-open");
+    let modalTrigger = null;
+
+    const focusableSelector = [
+      "a[href]", "button:not([disabled])", "input:not([disabled])",
+      "select:not([disabled])", "textarea:not([disabled])", "[tabindex]:not([tabindex='-1'])"
+    ].join(",");
+
+    const closeVolunteeringModal = (modal) => {
+      if (!modal || !modal.classList.contains("is-open")) return;
+
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+      window.dispatchEvent(new CustomEvent("site:modal-close", { detail: { modal } }));
+
+      if (modalTrigger && document.contains(modalTrigger)) {
+        modalTrigger.focus({ preventScroll: true });
+      }
+      modalTrigger = null;
     };
 
-    document.querySelectorAll(".more-details-link").forEach(link => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-            const modal = document.getElementById(this.dataset.modal);
-            if (!modal) return;
-
-            document.body.appendChild(modal);
-            modal.classList.add("is-open");
-            modal.setAttribute("aria-hidden", "false");
-            document.body.classList.add("modal-open");
-
-            const modalContent = modal.querySelector(".modal-content");
-            if (modalContent) modalContent.scrollTop = 0;
-
-            const closeButton = modal.querySelector(".close-button");
-            if (closeButton) closeButton.focus({ preventScroll: true });
-        });
+    document.querySelectorAll(".modal").forEach((modal) => {
+      modal.setAttribute("aria-hidden", "true");
+      const content = modal.querySelector(".modal-content");
+      if (content) content.setAttribute("data-lenis-prevent", "");
     });
 
-    document.querySelectorAll(".close-button").forEach(btn => {
-        btn.addEventListener("click", function () {
-            const modal = document.getElementById(this.dataset.modal);
-            closeVolunteeringModal(modal);
-        });
+    document.querySelectorAll(".more-details-link").forEach((link) => {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const modal = document.getElementById(this.dataset.modal);
+        if (!modal) return;
+
+        modalTrigger = this;
+        document.body.appendChild(modal);
+        modal.classList.add("is-open");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+
+        const modalContent = modal.querySelector(".modal-content");
+        if (modalContent) modalContent.scrollTop = 0;
+        window.dispatchEvent(new CustomEvent("site:modal-open", { detail: { modal } }));
+
+        const closeButton = modal.querySelector(".close-button");
+        if (closeButton) closeButton.focus({ preventScroll: true });
+      });
     });
 
-    window.addEventListener("click", function (e) {
-        if (e.target.classList.contains("modal")) {
-            closeVolunteeringModal(e.target);
-        }
+    document.querySelectorAll(".close-button").forEach((button) => {
+      button.addEventListener("click", function () {
+        closeVolunteeringModal(document.getElementById(this.dataset.modal));
+      });
     });
 
-    window.addEventListener("keydown", function (e) {
-        if (e.key !== "Escape") return;
-
-        closeVolunteeringModal(document.querySelector(".modal.is-open"));
+    window.addEventListener("click", (event) => {
+      if (event.target.classList.contains("modal")) closeVolunteeringModal(event.target);
     });
+
+    window.addEventListener("keydown", (event) => {
+      const modal = document.querySelector(".modal.is-open");
+      if (!modal) return;
+
+      if (event.key === "Escape") {
+        closeVolunteeringModal(modal);
+        return;
+      }
+
+      if (event.key !== "Tab") return;
+      const focusable = Array.from(modal.querySelectorAll(focusableSelector)).filter((element) => element.offsetParent !== null);
+      if (!focusable.length) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+  }());
 </script>

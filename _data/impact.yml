@@ -1,0 +1,41 @@
+- label: Retail scale
+  title: Walmart Fulfillment Management System
+  challenge: Unify complex omnichannel fulfillment workflows across customers, sellers, stores, fulfillment centers, markets, and cross-border transactions.
+  role: Architecture and engineering leadership for globally distributed teams, partnering across product, operations, and engineering.
+  architecture: Reusable event-driven fulfillment orchestration with asynchronous microservices, resilient workflows, and multi-tenant platform capabilities.
+  scale: 100M+ daily events across the United States, Canada, Mexico, and cross-border fulfillment networks.
+  outcomes:
+    - 25%+ fulfillment efficiency improvement
+    - 15% operational cost reduction
+    - Reusable framework adopted across platforms
+  evidence:
+    - label: Experience details
+      url: /resume/
+    - label: Related systems research
+      url: /publications/
+
+- label: Fintech risk
+  title: PayPal Compliance and Risk Platforms
+  challenge: Strengthen regulatory compliance and governance across global payment workflows.
+  role: Designed and delivered compliance APIs and reusable frameworks for critical risk initiatives.
+  architecture: Service-based compliance controls embedded into global payments workflows.
+  scale: Enterprise payment operations with globally distributed regulatory requirements.
+  outcomes:
+    - Prevented a potential $10M regulatory fine
+    - Earned PayPal Golden Envelope recognition
+  evidence:
+    - label: Experience details
+      url: /resume/
+
+- label: Telecom platforms
+  title: Credit Risk Systems at Global Scale
+  challenge: Make credit decisions reliably across operators, customer segments, and regional constraints.
+  role: Designed scalable credit-risk engines and partnered with cross-functional teams through global deployment.
+  architecture: Configurable decisioning systems built for reuse across operator environments.
+  scale: Production deployments at Tier-1 and Tier-2 telecom operators across multiple regions.
+  outcomes:
+    - Enabled large-scale regional adoption
+    - Created a reusable foundation for operator-specific risk models
+  evidence:
+    - label: Experience details
+      url: /resume/

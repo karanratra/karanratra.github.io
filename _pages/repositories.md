@@ -86,11 +86,33 @@ nav_order: 6
   <h2>Representative projects and technical contributions</h2>
 </div>
 
+<div class="content-filter" data-repository-filter aria-label="Filter repositories">
+  <div class="content-filter__group" role="group" aria-label="Repository category">
+    <button type="button" class="filter-chip is-active" data-category="all" aria-pressed="true">All projects</button>
+    <button type="button" class="filter-chip" data-category="data" aria-pressed="false">Data &amp; streaming</button>
+    <button type="button" class="filter-chip" data-category="cloud" aria-pressed="false">Cloud &amp; Azure</button>
+    <button type="button" class="filter-chip" data-category="platform" aria-pressed="false">Platform tooling</button>
+  </div>
+  <label class="content-filter__search">
+    <span class="sr-only">Search repositories</span>
+    <i class="fas fa-search" aria-hidden="true"></i>
+    <input type="search" data-filter-search placeholder="Search repositories">
+  </label>
+  <p class="content-filter__status" data-filter-status aria-live="polite"></p>
+</div>
+
 {% if site.data.repositories.github_repos %}
 <div class="repositories repo-grid repo-grid--repos">
   {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.html repository=repo %}
+    {% assign repo_category = "platform" %}
+    {% if repo contains "kafka" or repo contains "elasticsearch" or repo contains "multiwoven" or repo contains "cloudquery" %}
+      {% assign repo_category = "data" %}
+    {% elsif repo contains "azure" or repo contains "azurerm" or repo contains "cosmos" or repo contains "documentdb" %}
+      {% assign repo_category = "cloud" %}
+    {% endif %}
+    {% include repository/repo.html repository=repo category=repo_category featured=forloop.first %}
   {% endfor %}
 </div>
+<div class="filter-empty" data-filter-empty hidden>No repositories match the selected filters.</div>
 {% endif %}
 </section>

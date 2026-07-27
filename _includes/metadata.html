@@ -1,9 +1,9 @@
 {% if site.enable_google_verification or site.enable_bing_verification %}
     <!-- Website verification -->
-    {% if site.enable_google_verification -%}
+    {% if site.enable_google_verification and site.google_site_verification != "REPLACE_WITH_YOUR_GOOGLE_VERIFICATION_ID" -%}
     <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
     {%- endif -%}
-    {% if site.enable_bing_verification -%}
+    {% if site.enable_bing_verification and site.bing_site_verification != "REPLACE_WITH_YOUR_BING_VERIFICATION_ID" -%}
     <meta name="msvalidate.01" content="{{ site.bing_site_verification }}" />
     {%- endif -%}
     <!-- Avoid warning on Google Chrome
@@ -36,7 +36,7 @@
     {%- endif -%}
     </title>
     <meta name="author" content="{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}" />
-    <meta name="description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
+    <meta name="description" content="{%- if page.description -%}{{ page.description | strip_html | strip_newlines | escape }}{%- else -%}{{ site.description | strip_html | strip_newlines | escape }}{%- endif -%}" />
 {%- if page.keywords or site.keywords %}
     <meta name="keywords" content="{%- if page.keywords -%}{{ page.keywords }}{%- else -%}{{ site.keywords }}{%- endif -%}" />
 {%- endif %}
@@ -48,18 +48,22 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{%- if page.title -%}{{ title }} | {{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
     <meta property="og:url" content="{{ page.url | prepend: site.baseurl | prepend: site.url | remove_first: 'index.html' }}" />
-    <meta property="og:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
+    <meta property="og:description" content="{%- if page.description -%}{{ page.description | strip_html | strip_newlines | escape }}{%- else -%}{{ site.description | strip_html | strip_newlines | escape }}{%- endif -%}" />
     {% if page.og_image or site.og_image -%}
-    <meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
+    <meta property="og:image" content="{%- if page.og_image -%}{{ page.og_image | absolute_url }}{%- else -%}{{ site.og_image | absolute_url }}{%- endif -%}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Karan Kumar Ratra — Engineering Leadership and Distributed Systems" />
     {%- endif %}
     <meta property="og:locale" content="{{ site.lang }}" />
 
     <!-- Twitter card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="{%- if page.title -%}{{ page.title }}{%- else -%}{{ title }}{%- endif -%}" />
-    <meta name="twitter:description" content="{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}" />
-    {% if page.og_image or site.og_image -%}
-    <meta name="twitter:image" content="{%- if page.og_image -%}{{ page.og_image }}{%- else -%}{{ site.og_image }}{%- endif -%}" />
+    <meta name="twitter:description" content="{%- if page.description -%}{{ page.description | strip_html | strip_newlines | escape }}{%- else -%}{{ site.description | strip_html | strip_newlines | escape }}{%- endif -%}" />
+    {% if page.og_image or site.twitter_image or site.og_image -%}
+    <meta name="twitter:image" content="{%- if page.og_image -%}{{ page.og_image | absolute_url }}{%- elsif site.twitter_image -%}{{ site.twitter_image | absolute_url }}{%- else -%}{{ site.og_image | absolute_url }}{%- endif -%}" />
+    <meta name="twitter:image:alt" content="Karan Kumar Ratra — Engineering Leadership and Distributed Systems" />
     {%- endif %}
     {% if site.twitter_username -%}
     <meta name="twitter:site" content="@{{ site.twitter_username }}" />
@@ -184,25 +188,25 @@
         {%- capture link -%}https://discord.com/users/{{ site.discord_id }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
-    {%- if sameaslinks != blank -%}
-        {%- assign sameaslinks = sameaslinks | split: "" -%}
-    {%- endif -%}
+    {%- capture schema_description -%}{%- if page.description -%}{{ page.description }}{%- else -%}{{ site.description }}{%- endif -%}{%- endcapture -%}
+    {%- assign schema_headline = page.title | default: site.title -%}
+    {%- capture schema_name -%}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{%- endcapture -%}
 
     <script type="application/ld+json">
       {
         "author":
         {
           "@type": "Person",
-          "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}"
+          "name": {{ schema_name | jsonify }}
         },
-        "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
+        "url": {{ page.url | prepend: site.baseurl | prepend: site.url | jsonify }},
         "@type": "WebSite",
-        "description": "{%- if page.description -%}{{ page.description }}{%- else if site.description -%}{{ site.description }}{%- endif -%}",
-        "headline": "{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}",
+        "description": {{ schema_description | strip_html | strip_newlines | strip | jsonify }},
+        "headline": {{ schema_headline | jsonify }},
         {% if sameaslinks != blank -%}
-        "sameAs": {{ sameaslinks }},
+        "sameAs": {{ sameaslinks | jsonify }},
         {%- endif %}
-        "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
+        "name": {{ schema_name | jsonify }},
         "@context": "https://schema.org"
       }
     </script>

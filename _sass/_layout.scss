@@ -49,31 +49,6 @@ body.sticky-bottom-footer {
 
 // TODO: redefine projects layout.
 
-/* === Card hover shadow enhancement === */
-.featured-section:hover,
-.card:hover,
-.case-study-card:hover,
-.executive-signal-grid article:hover {
-  box-shadow: 0 22px 48px rgba(20, 28, 43, 0.12) !important;
-}
-
-html[data-theme='dark'] .featured-section:hover,
-html[data-theme='dark'] .card:hover,
-html[data-theme='dark'] .case-study-card:hover,
-html[data-theme='dark'] .executive-signal-grid article:hover {
-  box-shadow: 0 24px 60px rgba(2, 6, 23, 0.5) !important;
-}
-
-/* === Smooth page transitions === */
-.page-enter {
-  animation: pageEnter 0.5s ease-out;
-}
-
-@keyframes pageEnter {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* === Hero-proof-strip tag animations === */
 .hero-proof-strip span {
   user-select: none;
