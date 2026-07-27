@@ -6,27 +6,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
     <!-- Website verification -->
-    <!-- Avoid warning on Google Chrome
-        Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.
-        see https://stackoverflow.com/a/75119417
-    -->
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-
-    <!-- Standard metadata -->
+<!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>digital-transformation | Karan Kumar  Ratra</title>
-    <meta name="author" content="Karan Kumar  Ratra">
-    <meta name="description" content="Innovative E-Commerce Systems Architect and Technology Leader in Retail Technology | Technology Leader | Speaker | Mentor | E-Commerce Systems Architect">
-    <meta name="keywords" content="Innovative E-Commerce Systems Architect, Technology Leader, Judge, Speaker, Mentor, Retail Technology Leader">
-
+    <title>digital-transformation | Karan Kumar Ratra</title>
+    <meta name="author" content="Karan Kumar Ratra">
+    <meta name="description" content="Senior engineering leader at Walmart Global Tech specializing in distributed systems, enterprise fulfillment, event-driven architecture, and scalable retail platforms.">
     <!-- OpenGraph -->
-    <meta property="og:site_name" content="Karan Kumar  Ratra">
+    <meta property="og:site_name" content="Karan Kumar Ratra">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Karan Kumar  Ratra | digital-transformation">
+    <meta property="og:title" content="digital-transformation | Karan Kumar Ratra">
     <meta property="og:url" content="https://karanratra.com/blog/tag/digital-transformation/">
-    <meta property="og:description" content="Innovative E-Commerce Systems Architect and Technology Leader in Retail Technology | Technology Leader | Speaker | Mentor | E-Commerce Systems Architect">
+    <meta property="og:description" content="Senior engineering leader at Walmart Global Tech specializing in distributed systems, enterprise fulfillment, event-driven architecture, and scalable retail platforms.">
     <meta property="og:image" content="https://karanratra.com/assets/img/social/karan-ratra-social-card.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -35,67 +28,83 @@
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="digital-transformation">
-    <meta name="twitter:description" content="Innovative E-Commerce Systems Architect and Technology Leader in Retail Technology | Technology Leader | Speaker | Mentor | E-Commerce Systems Architect">
+    <meta name="twitter:title" content="digital-transformation | Karan Kumar Ratra">
+    <meta name="twitter:description" content="Senior engineering leader at Walmart Global Tech specializing in distributed systems, enterprise fulfillment, event-driven architecture, and scalable retail platforms.">
     <meta name="twitter:image" content="https://karanratra.com/assets/img/social/karan-ratra-social-card.png">
     <meta name="twitter:image:alt" content="Karan Kumar Ratra — Engineering Leadership and Distributed Systems">
     <meta name="twitter:site" content="@karanratra007">
     <meta name="twitter:creator" content="@karanratra007">
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-      {
-        "author":
-        {
-          "@type": "Person",
-          "name": "Karan Kumar Ratra"
-        },
-        "url": "https://karanratra.com/blog/tag/digital-transformation/",
-        "@type": "WebSite",
-        "description": "Innovative E-Commerce Systems Architect and Technology Leader in Retail Technology | Technology Leader | Speaker | Mentor | E-Commerce Systems Architect",
-        "headline": "digital-transformation",
-        "sameAs": ["https://orcid.org/0009-0009-7601-2001","https://scholar.google.com/citations?user=ZIFgSN8AAAAJ","https://github.com/karanratra","https://www.linkedin.com/in/karanratra07","https://twitter.com/karanratra007","https://medium.com/@karanratra07"],
-        "name": "Karan Kumar Ratra",
-        "@context": "https://schema.org"
-      }
-    </script>
-
-
-    <!-- JSON-LD Structured Data -->
+    <!-- One connected entity graph: Person, WebSite, and the current page. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Karan Kumar Ratra",
-      "url": "https://karanratra.com",
-      "image": "https://karanratra.com/assets/img/social/karan-ratra-social-card.png",
-      "email": "mailto:karanratra07@gmail.com",
-      "jobTitle": "Senior Engineering Leader at Walmart Global Tech",
-      "worksFor": [
+      "@graph": [
         {
-          "@type": "Organization",
-          "name": "Walmart Global Tech"
-        }
-      ],
-      "alumniOf": [
+          "@type": "Person",
+          "@id": "https://karanratra.com/#person",
+          "name": "Karan Kumar Ratra",
+          "alternateName": "Karan Ratra",
+          "url": "https://karanratra.com/",
+          "description": "Senior engineering leader at Walmart Global Tech specializing in distributed systems, enterprise fulfillment, event-driven architecture, and scalable retail platforms.",
+          "image": {
+            "@type": "ImageObject",
+            "@id": "https://karanratra.com/#portrait",
+            "url": "https://karanratra.com/assets/img/prof_pic-800.webp",
+            "contentUrl": "https://karanratra.com/assets/img/prof_pic-800.webp",
+            "caption": "Karan Kumar Ratra"
+          },
+          "email": "mailto:karanratra07@gmail.com",
+          "jobTitle": "Senior Engineering Leader",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Walmart Global Tech",
+            "url": "https://tech.walmart.com/"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Michigan State University",
+            "url": "https://msu.edu/"
+          },
+          "sameAs": ["https://github.com/karanratra","https://www.linkedin.com/in/karanratra07","https://scholar.google.com/citations?user=ZIFgSN8AAAAJ","https://orcid.org/0009-0009-7601-2001","https://medium.com/@karanratra07","https://adplist.org/mentors/karan-kumar-ratra","https://sessionize.com/karan-kumar-ratra/","https://mentorcruise.com/mentor/karankumarratra/"],
+          "knowsAbout": [
+            "Distributed Systems",
+            "Enterprise Fulfillment Architecture",
+            "Event-Driven Architecture",
+            "Cloud-Native Platforms",
+            "E-Commerce Systems",
+            "Engineering Leadership",
+            "Multi-Tenant Platforms"
+          ],
+          "knowsLanguage": [
+            { "@type": "Language", "name": "English" },
+            { "@type": "Language", "name": "Hindi" }
+          ]
+        },
         {
-          "@type": "CollegeOrUniversity",
-          "name": "Michigan State University"
+          "@type": "WebSite",
+          "@id": "https://karanratra.com/#website",
+          "url": "https://karanratra.com/",
+          "name": "Karan Kumar Ratra",
+          "description": "Senior engineering leader at Walmart Global Tech specializing in distributed systems, enterprise fulfillment, event-driven architecture, and scalable retail platforms.",
+          "inLanguage": "en",
+          "publisher": { "@id": "https://karanratra.com/#person" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://karanratra.com/blog/tag/digital-transformation/#webpage",
+          "url": "https://karanratra.com/blog/tag/digital-transformation/",
+          "name": "digital-transformation | Karan Kumar Ratra",
+          "description": "Senior engineering leader at Walmart Global Tech specializing in distributed systems, enterprise fulfillment, event-driven architecture, and scalable retail platforms.",
+          "inLanguage": "en",
+          "isPartOf": { "@id": "https://karanratra.com/#website" },
+          "about": { "@id": "https://karanratra.com/#person" },
+          "author": { "@id": "https://karanratra.com/#person" },
+          "primaryImageOfPage": { "@id": "https://karanratra.com/#portrait" }
         }
-      ],
-      "sameAs": [
-        "https://karanratra.com",
-        "https://github.com/karanratra",
-        "https://www.linkedin.com/in/karanratra07",
-        "https://orcid.org/0009-0009-7601-2001"
-      ],
-      "knowsAbout": ["Distributed Systems", "Cloud-Native Architecture", "Engineering Leadership", "Event-Driven Systems", "AI Automation"],
-      "knowsLanguage": [
-        {"@type": "Language", "name": "English"},
-        {"@type": "Language", "name": "Hindi"}
       ]
     }
     </script>
+
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
@@ -258,7 +267,7 @@
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        <span class="footer-brand">Karan Kumar  Ratra</span>
+        <span class="footer-brand">Karan Kumar Ratra</span>
         <span class="footer-sep">·</span>
         <span>© 2026</span>
         <span class="footer-sep">·</span>
