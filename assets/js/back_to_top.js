@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   button.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    if (window.siteScroll) {
+      window.siteScroll.scrollTo('top', { duration: 0.8 });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   });
 
   window.addEventListener('scroll', toggleVisibility, { passive: true });
