@@ -46,12 +46,11 @@
     <!-- JavaScripts -->
     {% include scripts/jquery.html %}
     {% include scripts/bootstrap.html %}
-    {% include scripts/masonry.html %}
     {% include scripts/misc.html %}
     {% if page.publication_badges %}{% include scripts/badges.html %}{% endif %}
     {% if page.mathjax %}{% include scripts/mathjax.html %}{% endif %}
     {% include scripts/analytics.html %}
-    {% include scripts/volunteer.html %}
+    {% if page.permalink == '/volunteering/' %}{% include scripts/volunteer.html %}{% endif %}
     {% include scripts/progressBar.html %}
     
   </body>

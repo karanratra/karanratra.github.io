@@ -4,6 +4,7 @@ permalink: /volunteering/
 title: Volunteering
 description: <strong>  Empowering Innovation Worldwide Through Mentoring, Judging, and Speaking. </strong>
 page_eyebrow: Community Leadership
+content_filters: true
 nav: true
 nav_order: 2
 ---
@@ -51,30 +52,28 @@ nav_order: 2
     Through ADPList, I focus on unlocking clarity for engineers and leaders navigating growth, transitions, and technical challenges.
   </p>
 
-  <div class="volunteering-embed">
-    <iframe
-      src="https://adplist.org/widgets/single-session?src=karan-kumar-ratra&amp;session=42837-mentorship-session"
-      width="100%"
-      height="500"
-      frameborder="0"
-      scrolling="no"
-      loading="lazy"
-      title="Book a mentorship session with Karan Kumar Ratra"
-    ></iframe>
+  <div class="volunteering-embed adplist-preview" data-adplist-embed data-src="https://adplist.org/widgets/single-session?src=karan-kumar-ratra&amp;session=42837-mentorship-session" data-height="500" data-title="ADPList mentorship session with Karan Kumar Ratra">
+    <span class="adplist-preview__icon" aria-hidden="true"><i class="fas fa-comments"></i></span>
+    <div class="adplist-preview__copy">
+      <p class="section-kicker">External mentorship profile</p>
+      <h3>Explore a one-to-one ADPList session</h3>
+      <p>The ADPList widget loads only when requested, keeping this page faster and avoiding an unnecessary third-party connection.</p>
+    </div>
+    <button type="button" class="adplist-preview__button" data-adplist-load>View mentorship session</button>
   </div>
 
   <div class="volunteering-subheading">
     <h3>What Mentees Are Saying</h3>
   </div>
 
-  <div class="volunteering-embed">
-    <iframe
-      src="https://adplist.org/widgets/reviews?src=karan-kumar-ratra"
-      title="All Reviews"
-      width="100%"
-      height="500"
-      loading="lazy"
-    ></iframe>
+  <div class="volunteering-embed adplist-preview" data-adplist-embed data-src="https://adplist.org/widgets/reviews?src=karan-kumar-ratra" data-height="500" data-title="ADPList mentee reviews for Karan Kumar Ratra">
+    <span class="adplist-preview__icon" aria-hidden="true"><i class="fas fa-star"></i></span>
+    <div class="adplist-preview__copy">
+      <p class="section-kicker">External reviews</p>
+      <h3>Read verified mentee feedback</h3>
+      <p>Load the ADPList review panel when you are ready to view feedback from past mentorship conversations.</p>
+    </div>
+    <button type="button" class="adplist-preview__button" data-adplist-load>View mentee reviews</button>
   </div>
 </section>
 

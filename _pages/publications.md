@@ -5,6 +5,7 @@ title: Publications
 description: Publications by categories in reversed chronological order.
 page_eyebrow: Research and Writing
 publication_badges: true
+content_filters: true
 years: [2026, 2025, 2024]
 nav: true
 nav_order: 1

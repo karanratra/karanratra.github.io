@@ -4,7 +4,7 @@
   $(function () {$('[data-toggle="tooltip"]').tooltip()})
   </script>
 {%- endif %}
-{%- if site.enable_medium_zoom %}
+{%- if site.enable_medium_zoom and page.zoomable %}
   <!-- Medium Zoom JS -->
   <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@{{ site.medium_zoom.version }}/dist/medium-zoom.min.js" integrity="{{ site.medium_zoom.integrity }}" crossorigin="anonymous"></script>
   <script defer src="{{ '/assets/js/zoom.js' | relative_url }}"></script>
@@ -16,6 +16,6 @@
   <script defer src="{{ '/assets/js/retail-network-background.js' | relative_url }}"></script>
   <script defer src="{{ '/assets/js/common.js' | relative_url }}"></script>
   <script defer src="{{ '/assets/js/site_experience.js' | relative_url }}"></script>
-  <script defer src="{{ '/assets/js/content_filters.js' | relative_url }}"></script>
+  {% if page.content_filters %}<script defer src="{{ '/assets/js/content_filters.js' | relative_url }}"></script>{% endif %}
   <script defer src="{{ '/assets/js/back_to_top.js' | relative_url }}"></script>
-  <script defer src="{{ '/assets/js/copy_code.js' | relative_url }}" type="text/javascript"></script>
+  {% if page.layout == 'post' or page.layout == 'distill' %}<script defer src="{{ '/assets/js/copy_code.js' | relative_url }}" type="text/javascript"></script>{% endif %}

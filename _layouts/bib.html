@@ -183,13 +183,21 @@
           </div>
           {% if site.badges %}
           <div class="badges">
+            {%- assign has_altmetric_id = false -%}
+            {%- if entry.eprint or entry.doi or entry.altmetric or entry.pmid or entry.isbn -%}
+              {%- assign has_altmetric_id = true -%}
+            {%- endif -%}
+            {%- assign has_dimensions_id = false -%}
+            {%- if entry.doi or entry.pmid -%}
+              {%- assign has_dimensions_id = true -%}
+            {%- endif -%}
             {%- if entry.citations %}
               <span class="manual-citation-badge" title="Google Scholar citations">
                 <span class="manual-citation-badge__label">Citations</span>
                 <span class="manual-citation-badge__count">{{ entry.citations }}</span>
               </span>
             {%- else %}
-            {%- if site.badges.altmetric_badge %}
+            {%- if site.badges.altmetric_badge and has_altmetric_id %}
             <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"
               {% if entry.eprint %}
                 data-arxiv-id="{{ entry.eprint }}"
@@ -204,14 +212,12 @@
               {% endif %}
               ></span>
             {%- endif %}
-            {%- if site.badges.dimensions_badge %}
+            {%- if site.badges.dimensions_badge and entry.dimensions == 'true' and has_dimensions_id %}
               <span class="__dimensions_badge_embed__"
               {% if entry.doi %}
                 data-doi="{{ entry.doi }}"
-              {% else if entry.pmid %}
+              {% elsif entry.pmid %}
                 data-pmid="{{ entry.pmid }}"
-              {% else %}
-                data-id="{{ entry.dimensions }}"
               {% endif %}
               data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
             {%- endif %}

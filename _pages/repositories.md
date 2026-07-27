@@ -4,6 +4,7 @@ permalink: /repositories/
 title: Repositories
 description: <b>A curated set of my open-source projects and contributions, spanning data pipelines, distributed systems, and API integrations — showcasing practical solutions in Kafka, Elasticsearch, ETL frameworks, and cloud-native engineering. </b>
 page_eyebrow: Open Source Footprint
+content_filters: true
 nav: true
 nav_order: 6
 ---

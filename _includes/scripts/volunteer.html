@@ -5,6 +5,27 @@
   (function () {
     "use strict";
 
+    document.querySelectorAll("[data-adplist-embed]").forEach((preview) => {
+      const button = preview.querySelector("[data-adplist-load]");
+      if (!button) return;
+
+      button.addEventListener("click", () => {
+        if (!preview.dataset.src || preview.classList.contains("is-loaded")) return;
+        button.disabled = true;
+        button.textContent = "Loading ADPList…";
+
+        const iframe = document.createElement("iframe");
+        iframe.src = preview.dataset.src;
+        iframe.title = preview.dataset.title || "ADPList content";
+        iframe.width = "100%";
+        iframe.height = preview.dataset.height || "500";
+        iframe.loading = "eager";
+        iframe.setAttribute("scrolling", "no");
+        iframe.addEventListener("load", () => preview.classList.add("is-loaded"), { once: true });
+        preview.replaceChildren(iframe);
+      });
+    });
+
     let modalTrigger = null;
 
     const focusableSelector = [

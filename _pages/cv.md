@@ -3,6 +3,7 @@ layout: cv
 permalink: /resume/
 title: Resume
 page_eyebrow: Executive Resume
+content_filters: true
 nav: true
 nav_order: 4
 cv_pdf: Karan_Kumar_Ratra_Resume.pdf
