@@ -48,8 +48,8 @@
     {% include scripts/bootstrap.html %}
     {% include scripts/masonry.html %}
     {% include scripts/misc.html %}
-    {% include scripts/badges.html %}
-    {% include scripts/mathjax.html %}
+    {% if page.publication_badges %}{% include scripts/badges.html %}{% endif %}
+    {% if page.mathjax %}{% include scripts/mathjax.html %}{% endif %}
     {% include scripts/analytics.html %}
     {% include scripts/volunteer.html %}
     {% include scripts/progressBar.html %}

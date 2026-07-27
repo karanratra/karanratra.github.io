@@ -19,19 +19,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.2.1'
         bundler-cache: true
-    - name: Install and Build 🔧
+    - name: Install ImageMagick
       run: |
-        npm install -g mermaid.cli
-        bundle exec jekyll build
+        sudo apt-get update
+        sudo apt-get install --yes imagemagick
+        command -v magick || command -v convert
+    - name: Build 🔧
+      run: bundle exec jekyll build --trace
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: _site
-

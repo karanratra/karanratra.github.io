@@ -19,7 +19,7 @@ certificate: BCS_Certificate.pdf
   <section class="membership-section-card membership-figure-card">
     <div class="membership-media-grid membership-media-grid--single">
       <div>
-        {% include figure.html path="assets/img/BCS_Member.png" title="BCS Member" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/BCS_Member.png" alt="BCS professional membership recognition" title="BCS Member" class="img-fluid rounded z-depth-1" %}
         <p class="membership-inline-note">BCS membership reflects professional standards, continuing development, and contribution to the global computing community.</p>
       </div>
     </div>

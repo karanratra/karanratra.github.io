@@ -40,7 +40,13 @@ social: true  # includes social icons at the bottom of the page
     </div>
     <aside class="hero-portrait">
       <div class="hero-portrait__frame">
-        <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Karan Kumar Ratra portrait" class="hero-portrait__image" loading="eager" decoding="async" fetchpriority="high">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="{{ '/assets/img/prof_pic-480.webp' | relative_url }} 480w, {{ '/assets/img/prof_pic-800.webp' | relative_url }} 800w, {{ '/assets/img/prof_pic-1400.webp' | relative_url }} 1400w"
+            sizes="(max-width: 575px) calc(100vw - 5.5rem), (max-width: 991px) 34vw, 24rem">
+          <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" width="881" height="975" alt="Karan Kumar Ratra portrait" class="hero-portrait__image" loading="eager" decoding="async" fetchpriority="high">
+        </picture>
         <!-- <div class="hero-portrait__caption">Driving Scalable Retail Innovation</div> -->
       </div>
     </aside>
@@ -69,7 +75,7 @@ social: true  # includes social icons at the bottom of the page
 <section class="featured-section executive-signal">
   <div class="section-heading">
     <p class="section-kicker">Executive Lens</p>
-    <h4>Leading platforms the way product organizations need them led</h4>
+    <h2>Leading platforms the way product organizations need them led</h2>
   </div>
   <div class="executive-signal-grid">
     <article>
@@ -92,7 +98,7 @@ social: true  # includes social icons at the bottom of the page
     <p class="section-kicker">Leadership Story</p>
     <!-- <p class="hero-kicker">Leadership Story</p> -->
 
-    <h4>Operating at the intersection of architecture, execution, and people leadership</h4>
+    <h2>Operating at the intersection of architecture, execution, and people leadership</h2>
   </div>
   <p><strong>Karan Kumar Ratra</strong> is a <strong>Senior Engineering Leader at Walmart Global Tech</strong>, where he leads globally distributed engineering teams building high-throughput, event-driven systems for the world’s largest retailer. He partners across product, operations, and engineering to deliver platforms that improve reliability, unlock customer experience gains, and scale across markets.</p>
   <p>His background combines <strong>architecture depth, operating rigor, and people leadership</strong>. Across enterprise modernization, asynchronous microservices, and cloud-native transformation, he has repeatedly built systems that improve throughput, resilience, and cost efficiency while helping teams grow into stronger technical organizations.</p>
@@ -101,7 +107,7 @@ social: true  # includes social icons at the bottom of the page
 <section class="featured-section case-study-section">
   <div class="section-heading">
     <p class="section-kicker">Platform Impact</p>
-    <h4>Representative systems and leadership outcomes across retail, fintech, and telecom</h4>
+    <h2>Representative systems and leadership outcomes across retail, fintech, and telecom</h2>
   </div>
   <div class="case-study-grid">
     {% for item in site.data.impact %}

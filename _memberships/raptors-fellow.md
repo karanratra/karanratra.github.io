@@ -19,7 +19,7 @@ certificate: Raptors_Certificate.pdf
   <section class="membership-section-card membership-figure-card">
     <div class="membership-media-grid membership-media-grid--single">
       <div>
-        {% include figure.html path="assets/img/memberships/raptors.png" title="Raptors Fellow Certificate" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/memberships/raptors.png" alt="Raptors Fellow certificate" title="Raptors Fellow Certificate" class="img-fluid rounded z-depth-1" %}
         <p class="membership-inline-note">Recognition as part of a community of innovators contributing through Raptors.dev.</p>
       </div>
     </div>

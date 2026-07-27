@@ -19,7 +19,7 @@ certificate: SAS_Eminent_Fellow_Certificate.pdf
   <section class="membership-section-card membership-figure-card">
     <div class="membership-media-grid membership-media-grid--single">
       <div>
-        {% include figure.html path="assets/img/SAS-Membership-Details.png" title="SAS Membership Details" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/SAS-Membership-Details.png" alt="SAS Eminent Fellow membership details" title="SAS Membership Details" class="img-fluid rounded z-depth-1" %}
         <p class="membership-inline-note">SAS Society’s global community of eminent fellows and fellows advancing research, innovation, and academic leadership.</p>
       </div>
     </div>

@@ -24,7 +24,7 @@ certificate: IEEE_Membership_Card.pdf
   <section class="membership-section-card membership-figure-card">
     <div class="membership-media-grid membership-media-grid--single">
       <div>
-        {% include figure.html path="assets/img/IEEE_TPC_Roles.jpg" title="IEEE TPC roles" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/IEEE_TPC_Roles.jpg" alt="IEEE technical program committee roles and conference contributions" title="IEEE TPC roles" class="img-fluid rounded z-depth-1" %}
         <p class="membership-inline-note">Recent IEEE Technical Program Committee roles.</p>
       </div>
     </div>
@@ -44,10 +44,10 @@ certificate: IEEE_Membership_Card.pdf
   <section class="membership-section-card membership-figure-card">
     <div class="membership-media-grid membership-media-grid--two-up">
       <div>
-        {% include figure.html path="assets/img/IEEE_Senior_Member.jpg" title="IEEE Senior Member" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/IEEE_Senior_Member.jpg" alt="IEEE Senior Member recognition" title="IEEE Senior Member" class="img-fluid rounded z-depth-1" %}
       </div>
       <div>
-        {% include figure.html path="assets/img/IEEE_Sociteies.jpg" title="IEEE societies" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/IEEE_Sociteies.jpg" alt="IEEE professional society affiliations" title="IEEE societies" class="img-fluid rounded z-depth-1" %}
       </div>
     </div>
     <p class="membership-inline-note">IEEE senior member recognition and society affiliations.</p>

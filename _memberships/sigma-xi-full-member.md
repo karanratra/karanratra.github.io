@@ -19,7 +19,7 @@ certificate: SigmaXi_MembershipCertificate.pdf
   <section class="membership-section-card membership-figure-card">
     <div class="membership-media-grid membership-media-grid--single">
       <div>
-        {% include figure.html path="assets/img/memberships/sigmaxi-certificate.png" title="Sigma Xi Membership Certificate" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/memberships/sigmaxi-certificate.png" alt="Sigma Xi full membership certificate" title="Sigma Xi Membership Certificate" class="img-fluid rounded z-depth-1" %}
         <p class="membership-inline-note">Sigma Xi full membership recognition.</p>
       </div>
     </div>

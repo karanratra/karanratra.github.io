@@ -29,7 +29,7 @@ certificate: SCRS_Felllow_Certificate.pdf
   <section class="membership-section-card membership-figure-card">
     <div class="membership-media-grid membership-media-grid--single">
       <div>
-        {% include figure.html path="assets/img/SCRS_Fellow.jpg" title="SCRS Fellow" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/SCRS_Fellow.jpg" alt="SCRS Distinguished Fellow recognition" title="SCRS Fellow" class="img-fluid rounded z-depth-1" %}
         <p class="membership-inline-note">Recognized by the Soft Computing Research Society for innovation, research, and emerging technology leadership.</p>
       </div>
     </div>
